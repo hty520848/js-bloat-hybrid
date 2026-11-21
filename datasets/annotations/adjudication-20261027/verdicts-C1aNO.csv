@@ -1,0 +1,20 @@
+file,arm,edge,verdict,note,adjudicator
+crypto-aes.js,full,crypto-aes.js:278:1->crypto-aes.js:279:49,FALSE,"C1a=NO; C1-v1+C1a-20261027; 279 行 str.replace(/[\0\t\n\v\f\r\xa0'""!-]/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,full,crypto-aes.js:282:1->crypto-aes.js:283:37,FALSE,"C1a=NO; C1-v1+C1a-20261027; 283 行 str.replace(/!\d\d?\d?!/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,full,crypto-aes.js:343:1->crypto-aes.js:346:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 346 行 str.replace(/[\u0080-\u07ff]/g, function(c){...}) 的回调实参（跨行实参）；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,full,crypto-aes.js:343:1->crypto-aes.js:352:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 352 行 str.replace(/[\u0800-\uffff]/g, function(c){...}) 的回调实参（跨行实参）；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,full,crypto-aes.js:359:1->crypto-aes.js:362:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 362 行 str.replace(/[\u00c0-\u00df][\u0080-\u00bf]/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,full,crypto-aes.js:359:1->crypto-aes.js:368:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 368 行 str.replace(/[\u00e0-\u00ef].../g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:278:1->crypto-aes.js:279:49,FALSE,"C1a=NO; C1-v1+C1a-20261027; 279 行 str.replace(/[\0\t\n\v\f\r\xa0'""!-]/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:282:1->crypto-aes.js:283:37,FALSE,"C1a=NO; C1-v1+C1a-20261027; 283 行 str.replace(/!\d\d?\d?!/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:343:1->crypto-aes.js:346:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 346 行 str.replace(/[\u0080-\u07ff]/g, function(c){...}) 的回调实参（跨行实参）；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:343:1->crypto-aes.js:352:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 352 行 str.replace(/[\u0800-\uffff]/g, function(c){...}) 的回调实参（跨行实参）；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:359:1->crypto-aes.js:362:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 362 行 str.replace(/[\u00c0-\u00df][\u0080-\u00bf]/g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+crypto-aes.js,no-module-filter,crypto-aes.js:359:1->crypto-aes.js:368:7,FALSE,"C1a=NO; C1-v1+C1a-20261027; 368 行 str.replace(/[\u00e0-\u00ef].../g, function(c){...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+string-tagcloud.js,full,string-tagcloud.js:208:26->string-tagcloud.js:211:62,FALSE,"C1a=NO; C1-v1+C1a-20261027; 211 行 this.replace(/[\x00-\x1f\\""]/g, function (a) {...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+string-tagcloud.js,full,string-tagcloud.js:231:1->string-tagcloud.js:231:1,FALSE,C1a 不适用; C1-v1+C1a-20261027; 位置对同指 makeTagCloud（string-tagcloud.js:231-262），该函数体内无自调用（调用点仅 sort/charCodeAt/replace/toLowerCase/Math.floor），两端口同指一函数且无调用路径，判否；根因是原生被调顶点渲染折叠（experiments/rq1/single_benchmark.js:31-34），记为工具缺陷,A1
+string-tagcloud.js,full,string-tagcloud.js:231:1->string-tagcloud.js:235:18,FALSE,"C1a=NO; C1-v1+C1a-20261027; 235 行 tagInfo.sort(function(a, b) {...}) 的比较器实参；ECMA-262 保证该内置方法调用其函数实参",A1
+string-tagcloud.js,no-index,string-tagcloud.js:231:1->string-tagcloud.js:231:1,FALSE,C1a 不适用; C1-v1+C1a-20261027; 位置对同指 makeTagCloud（string-tagcloud.js:231-262），该函数体内无自调用（调用点仅 sort/charCodeAt/replace/toLowerCase/Math.floor），两端口同指一函数且无调用路径，判否；根因是原生被调顶点渲染折叠（experiments/rq1/single_benchmark.js:31-34），记为工具缺陷,A1
+string-tagcloud.js,no-module-filter,string-tagcloud.js:208:26->string-tagcloud.js:211:62,FALSE,"C1a=NO; C1-v1+C1a-20261027; 211 行 this.replace(/[\x00-\x1f\\""]/g, function (a) {...}) 的回调实参；ECMA-262 保证该内置方法调用其函数实参",A1
+string-tagcloud.js,no-module-filter,string-tagcloud.js:231:1->string-tagcloud.js:231:1,FALSE,C1a 不适用; C1-v1+C1a-20261027; 位置对同指 makeTagCloud（string-tagcloud.js:231-262），该函数体内无自调用（调用点仅 sort/charCodeAt/replace/toLowerCase/Math.floor），两端口同指一函数且无调用路径，判否；根因是原生被调顶点渲染折叠（experiments/rq1/single_benchmark.js:31-34），记为工具缺陷,A1
+string-tagcloud.js,no-module-filter,string-tagcloud.js:231:1->string-tagcloud.js:235:18,FALSE,"C1a=NO; C1-v1+C1a-20261027; 235 行 tagInfo.sort(function(a, b) {...}) 的比较器实参；ECMA-262 保证该内置方法调用其函数实参",A1

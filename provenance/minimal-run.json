@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "environment": "Linux x86_64, installed GraalVM 21.3 / NodeProf",
+  "workload": {
+    "library": "body-parser",
+    "client": "express",
+    "method": "hybrid"
+  },
+  "staticCallGraph": true,
+  "dynamicProfile": true,
+  "checks": {
+    "rq1": "passed",
+    "rq2": "passed",
+    "rq3": "passed",
+    "rq4": "passed"
+  },
+  "scope": "One complete library suite and client suite, one timing pair and one fresh cost repetition. This is an execution check.",
+  "portableImport": "passed",
+  "portableRuns": [
+    "crypto-aes.js",
+    "debug",
+    "body-parser/express Hybrid"
+  ],
+  "codeqlVersion": "2.3.4",
+  "istanbulLibInstrumentVersion": "5.2.1",
+  "targetTestCaseTimeoutMillis": 20000,
+  "RQ2MetricCheck": {
+    "status": "passed",
+    "definition": "mean absolute difference between expanded and original application JavaScript size, in KiB",
+    "expandedSizeEstimate": "initial transformed JavaScript bytes plus distinct payload bytes actually loaded",
+    "scope": "body-parser / express / Hybrid",
+    "validation": "Restored the exact source hashes from the successful Linux verification and rechecked the operands and five-client aggregation."
+  }
+}

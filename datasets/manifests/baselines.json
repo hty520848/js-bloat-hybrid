@@ -1,0 +1,18 @@
+[
+  {
+    "name": "DepPrune-pinned",
+    "repo": "https://github.com/ASSERT-KTH/DepPrune",
+    "commit": "bcd4eb567bdf732844d99e184dcc35fb3442f6ad",
+    "archiveUrl": "https://codeload.github.com/ASSERT-KTH/DepPrune/zip/bcd4eb567bdf732844d99e184dcc35fb3442f6ad",
+    "sha256": "976311802074fc42cdbeb4058552bbf0002dff7e46bdaac038d72989c43d63af",
+    "bytes": 9067402
+  },
+  {
+    "name": "mininode-pinned",
+    "repo": "https://github.com/wspr-ncsu/mininode",
+    "commit": "45ee3e953996e8a428bab5edbf3c24a60d47a574",
+    "archiveUrl": "https://codeload.github.com/wspr-ncsu/mininode/zip/45ee3e953996e8a428bab5edbf3c24a60d47a574",
+    "sha256": "72c82d087b66da6c35a5516447013ed369c4231eb92d2f73d2e5d5cb0047d52b",
+    "bytes": 78379
+  }
+]

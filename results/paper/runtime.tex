@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Runtime Execution Time and Slowdown Ratio (SD) Comparison}
+\label{tab:runtime}
+\footnotesize
+\setlength{\tabcolsep}{2.7pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}llrrrrrrr@{}}
+\toprule
+& & & \multicolumn{2}{c}{SSCG} & \multicolumn{2}{c}{SDCG} & \multicolumn{2}{c}{Hybrid} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(l){8-9}
+Library & Client & $T$ (s) & ET (s) & SD & ET (s) & SD & ET (s) & SD \\
+\midrule
+prop-types & react-date & 4.60 & 4.60 & 0.00\% & 4.60 & 0.00\% & 4.61 & 0.22\% \\
+ & react-loadable & 11.46 & 13.55 & 18.24\% & 13.53 & 18.06\% & 12.88 & 12.39\% \\
+ & react-redux & 27.61 & 29.55 & 7.03\% & 29.58 & 7.14\% & 28.50 & 3.22\% \\
+ & redux-form & 34.32 & 36.02 & 4.95\% & 36.05 & 5.04\% & 35.87 & 4.52\% \\
+ & react-dropzone & 47.83 & 50.59 & 5.77\% & 50.59 & 5.77\% & 49.01 & 2.47\% \\
+\addlinespace[4pt]
+redux & Choices & 5.06 & 5.06 & 0.00\% & 5.05 & 0.00\% & 5.06 & 0.00\% \\
+ & griddle & 8.93 & 9.00 & 0.78\% & 9.01 & 0.90\% & 8.97 & 0.45\% \\
+ & reactBeautifulDnd & 61.70 & 62.04 & 0.55\% & 62.12 & 0.68\% & 62.10 & 0.65\% \\
+ & found & 30.61 & 31.34 & 2.38\% & 31.34 & 2.38\% & 31.25 & 2.09\% \\
+ & redux-ignore & 0.57 & 0.59 & 3.51\% & 0.59 & 3.51\% & 0.56 & 0.00\% \\
+\addlinespace[4pt]
+send & connectGzipStatic & 0.97 & 1.47 & 51.55\% & 1.14 & 17.53\% & 1.09 & 12.37\% \\
+ & gulp-connect & 1.00 & 1.42 & 42.00\% & 1.15 & 15.00\% & 1.10 & 10.00\% \\
+ & express & 4.48 & 6.15 & 37.28\% & 4.63 & 3.35\% & 4.57 & 2.01\% \\
+ & harp & 3.01 & 3.50 & 16.28\% & 3.13 & 3.99\% & 3.06 & 1.66\% \\
+ & serve-static & 1.37 & 1.65 & 20.44\% & 1.48 & 8.03\% & 1.42 & 3.65\% \\
+\midrule
+\textbf{Average} &  & \textbf{16.23} & \textbf{17.10} & \textbf{14.04\%} & \textbf{16.93} & \textbf{6.06\%} & \textbf{16.67} & \textbf{3.69\%} \\
+\bottomrule
+\end{tabular*}
+\end{table}

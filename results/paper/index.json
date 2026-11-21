@@ -1,0 +1,88 @@
+{
+  "manuscript": "SQJ_最新",
+  "collection": "Figures and tables adopted in the manuscript",
+  "items": [
+    {
+      "file": "dataset.tex",
+      "kind": "paper-table",
+      "label": "tab:dataset",
+      "sha256": "191d141748736206ed826b2dc8c5e242fc47e5d70313443aaa43f2e51cd438af",
+      "source": "eval.data.tex",
+      "sourceSha256": "b10bc7b83eec8ffea6efd5b1d0cfcb05b807a7b884a7660adab219ce1728f7bc"
+    },
+    {
+      "file": "mcg_static.tex",
+      "kind": "paper-table",
+      "label": "tab:mcg_static",
+      "sha256": "94617c75a7834d0b6ac8f37e27e2bfb29ed8ac8dfd9dd541986218c1f43bb1f5",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "size_reduction.tex",
+      "kind": "paper-table",
+      "label": "tab:size_reduction",
+      "sha256": "e48e9aea27d8506dd08c75c1d52ed51df9723bc1b87a29fad1d2c4c847e64f69",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "ablation.tex",
+      "kind": "paper-table",
+      "label": "tab:ablation",
+      "sha256": "49c53b5bf369d42df5ec818a9f92a85f913e9a3fab302fcdb44e258ec03a26c2",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "mecs.tex",
+      "kind": "paper-table",
+      "label": "tab:mecs",
+      "sha256": "5282cb26ebd54d14999547ec626a288308b3303c9699a521b056c8bcb6337071",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "stub_stats.tex",
+      "kind": "paper-table",
+      "label": "tab:stub_stats",
+      "sha256": "9777500c332d6ccc939842ecb7331cfaf2c135dd32e6f065443fd57029c5ae49",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "runtime.tex",
+      "kind": "paper-table",
+      "label": "tab:runtime",
+      "sha256": "99015fa81115a475045d9d2b5ccc4007bbf0191e886e5f28cf52796e07ab75c1",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "time.tex",
+      "kind": "paper-table",
+      "label": "tab:time",
+      "sha256": "e3f6cf1e3b8d8007f7ab4af582e908de60dd97a2d3ff9a13dfeba38b9075deb8",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0"
+    },
+    {
+      "file": "accuracy.pdf",
+      "kind": "paper-figure",
+      "label": "fig:accuracy",
+      "sha256": "6a508ca4b607ad5b67270f063eace6825807d49939cfd210ccee6dcf9e60ea97",
+      "source": "pdf/accuracy.pdf",
+      "sourceSha256": "6a508ca4b607ad5b67270f063eace6825807d49939cfd210ccee6dcf9e60ea97"
+    },
+    {
+      "file": "rq4-repetitions.json",
+      "kind": "paper-table-source-data",
+      "label": "tab:time",
+      "sha256": "564791194f030aae71890533fbd1c4b580047485127f22e8259a3821362ff0b6",
+      "source": "eval.result.tex",
+      "sourceSha256": "5cd43e5a0668a9f5dd69b6e1044074032762067fcebbcf4f03e7e066811c8ef0",
+      "measurementBatch": "rq4-completed-20261105-006",
+      "measurementBatchSha256": "44b421a28be2ccad52e6a1a31f128e0392a4d723a1b81d9d5225887c59a9343c"
+    }
+  ]
+}

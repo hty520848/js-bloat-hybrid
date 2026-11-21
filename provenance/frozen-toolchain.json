@@ -1,0 +1,49 @@
+{
+  "scope": "Frozen software configuration for rerunning RQ1–RQ4",
+  "nodeJs": {
+    "staticAnalysis": "16.14.1",
+    "transformationAndTests": "14.21.3"
+  },
+  "npm": "6.14.18",
+  "babel": {
+    "staticAnalysis": {
+      "core": "7.22.1",
+      "parser": "7.22.4",
+      "traverse": "7.22.5",
+      "generator": "7.22.3"
+    },
+    "transformation": {
+      "core": "7.23.7",
+      "parser": "7.23.6",
+      "traverse": "7.23.7",
+      "generator": "7.23.6"
+    }
+  },
+  "nodeProf": {
+    "default": {
+      "graalVM": "21.3.0",
+      "nodeJs": "14.17.6",
+      "sourceRevision": "652665b0bdb5b5a0dd10b09404c1c0635c7512ed"
+    },
+    "css-loader": {
+      "graalVM": "23.0.1",
+      "nodeJs": "18.14.1",
+      "sourceRevision": "5cccefc56dbd144f6a9ff303288dc1f4441f30d4"
+    }
+  },
+  "baselines": {
+    "SSCG": {
+      "codeqlCLI": "2.3.4",
+      "javascriptQueryLibrary": "1.26.0",
+      "moduleQuery": "inputs/Modules.qll"
+    },
+    "SDCG": {
+      "istanbul-lib-instrument": "5.2.1",
+      "upstreamCLI": "https://github.com/istanbuljs/nyc",
+      "execution": "direct Istanbul API"
+    }
+  },
+  "validationPython": "3.6.9",
+  "archives": "manifest/inputs.json",
+  "libraryVersions": "datasets/manifests/libraries.json"
+}

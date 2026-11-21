@@ -1,0 +1,2110 @@
+{
+  "table": "tab:time",
+  "sourceBatch": "rq4-completed-20261105-006",
+  "sourceSha256": "44b421a28be2ccad52e6a1a31f128e0392a4d723a1b81d9d5225887c59a9343c",
+  "unit": "seconds",
+  "repetitionsPerLibraryAndMethod": 10,
+  "standardDeviation": "sample (n - 1)",
+  "rows": [
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 2.564918614923954,
+      "totalSeconds": 191.01789557561278
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 3.0660953782498837,
+      "totalSeconds": 32.214604660868645
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 2.4228384234011173,
+      "totalSeconds": 6.2435117438435555
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 2.423106510192156,
+      "totalSeconds": 6.181977175176144
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 2.33125264570117,
+      "totalSeconds": 190.36007499322295
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 3.012673869729042,
+      "totalSeconds": 21.027005665004253
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 2.365558721125126,
+      "totalSeconds": 6.165417641401291
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 2.3844749741256237,
+      "totalSeconds": 185.6174402832985
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 2.957725826650858,
+      "totalSeconds": 20.65159446746111
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 2.3612692281603813,
+      "totalSeconds": 185.0841996446252
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 2.892484501004219,
+      "totalSeconds": 22.03005124256015
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 2.399938065558672,
+      "totalSeconds": 6.22939645498991
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 3.9337302409112453,
+      "totalSeconds": 22.199020877480507
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 2.4600697569549084,
+      "totalSeconds": 7.842294760048389
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 2.375570435076952,
+      "totalSeconds": 186.3404890783131
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 2.988707661628723,
+      "totalSeconds": 20.84091131016612
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 2.2780825830996037,
+      "totalSeconds": 5.987897578626871
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 2.319069728255272,
+      "totalSeconds": 180.6458451114595
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 2.971445109695196,
+      "totalSeconds": 20.870401620864868
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 2.3496305719017982,
+      "totalSeconds": 185.19043650478125
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 2.3102325908839703,
+      "totalSeconds": 5.930430557578802
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 3.562440972775221,
+      "totalSeconds": 7.50173082575202
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 2.35467566922307,
+      "totalSeconds": 186.83976764976978
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 2.962280325591564,
+      "totalSeconds": 21.45997166261077
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 2.2729294523596764,
+      "totalSeconds": 5.863779935985804
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 2.981972474604845,
+      "totalSeconds": 21.467658828943968
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 2.3263562209904194,
+      "totalSeconds": 186.51364548131824
+    },
+    {
+      "library": "body-parser",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 2.2463234812021255,
+      "totalSeconds": 5.84335520863533
+    },
+    {
+      "library": "body-parser",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 2.316991988569498,
+      "totalSeconds": 187.80189879983664
+    },
+    {
+      "library": "body-parser",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 2.883557390421629,
+      "totalSeconds": 21.684657525271177
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.1321971826255322,
+      "totalSeconds": 182.21329626068473
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.8256082385778427,
+      "totalSeconds": 14.009352274239063
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.0328694395720959,
+      "totalSeconds": 2.7598157227039337
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.2910421825945377,
+      "totalSeconds": 12.36906285583973
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.098718285560608,
+      "totalSeconds": 182.039648771286
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.0250731967389584,
+      "totalSeconds": 2.6948039829730988
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.1820205859839916,
+      "totalSeconds": 182.62376437336206
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 0.9772610701620579,
+      "totalSeconds": 2.617249120026827
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.2034449316561222,
+      "totalSeconds": 13.046586938202381
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.1147950626909733,
+      "totalSeconds": 185.13727279379964
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.7883801124989986,
+      "totalSeconds": 13.288433492183685
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.0054049119353294,
+      "totalSeconds": 2.70844304561615
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.3426824323832989,
+      "totalSeconds": 12.654103975743055
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.1851796694099903,
+      "totalSeconds": 179.74550657719374
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.0158740766346455,
+      "totalSeconds": 2.6560219675302505
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.0597176291048527,
+      "totalSeconds": 2.8329958096146584
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.1504058539867401,
+      "totalSeconds": 182.4229125007987
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.2277391701936722,
+      "totalSeconds": 12.21236763522029
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.0232629366219044,
+      "totalSeconds": 2.7929456122219563
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.1386657319962978,
+      "totalSeconds": 179.52574841305614
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.195813063532114,
+      "totalSeconds": 12.691167496144772
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.144261822104454,
+      "totalSeconds": 176.26987089961767
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.0254135057330132,
+      "totalSeconds": 2.787327967584133
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 2.5675865598022938,
+      "totalSeconds": 14.412813689559698
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.1833823658525944,
+      "totalSeconds": 180.9364908784628
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.2252062782645226,
+      "totalSeconds": 12.255317769944668
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.0017991364002228,
+      "totalSeconds": 3.280807387083769
+    },
+    {
+      "library": "compression",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.1296260878443718,
+      "totalSeconds": 181.6782104484737
+    },
+    {
+      "library": "compression",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.004200678318739,
+      "totalSeconds": 2.6679707542061806
+    },
+    {
+      "library": "compression",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.3163150437176228,
+      "totalSeconds": 12.725498292595148
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 21.994296081364155,
+      "totalSeconds": 339.03661623224616
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 10.516400530934334,
+      "totalSeconds": 1902.6090083271265
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 9.824476290494204,
+      "totalSeconds": 60.52821517363191
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 10.640056625008583,
+      "totalSeconds": 1928.077955454588
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 22.14626905694604,
+      "totalSeconds": 315.32521817088127
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 9.714017700403929,
+      "totalSeconds": 57.30780605971813
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 21.98870151489973,
+      "totalSeconds": 321.52355563268065
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 10.609582550823689,
+      "totalSeconds": 1919.176281195134
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 9.593920826911926,
+      "totalSeconds": 56.14204657077789
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 10.605633292347193,
+      "totalSeconds": 1900.5232264436781
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 9.952654540538788,
+      "totalSeconds": 56.72348017990589
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 21.670983240008354,
+      "totalSeconds": 314.79430770501494
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 10.117768332362175,
+      "totalSeconds": 57.61632912606001
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 21.68613200262189,
+      "totalSeconds": 316.1320992819965
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 10.429052975028753,
+      "totalSeconds": 1905.5760689526796
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 10.408011559396982,
+      "totalSeconds": 1890.6478084363043
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 21.766404163092375,
+      "totalSeconds": 335.3325213268399
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 9.761551599949598,
+      "totalSeconds": 58.92171360552311
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 10.06962576135993,
+      "totalSeconds": 60.889034777879715
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 21.815863322466612,
+      "totalSeconds": 319.82176982983947
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 10.546172298491001,
+      "totalSeconds": 1904.29707057029
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 10.482336271554232,
+      "totalSeconds": 1882.3172422870994
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 9.763082057237625,
+      "totalSeconds": 58.111812233924866
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 21.77377564460039,
+      "totalSeconds": 311.4231181629002
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 9.84284083172679,
+      "totalSeconds": 57.036808993667364
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 10.504105906933546,
+      "totalSeconds": 1877.6092771068215
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 22.1458682641387,
+      "totalSeconds": 317.61684845015407
+    },
+    {
+      "library": "css-loader",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 10.675752382725477,
+      "totalSeconds": 1891.5631311684847
+    },
+    {
+      "library": "css-loader",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 22.161034267395735,
+      "totalSeconds": 318.6936462558806
+    },
+    {
+      "library": "css-loader",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 9.78006549924612,
+      "totalSeconds": 56.2408277541399
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.8833184875547886,
+      "totalSeconds": 95.76254253461957
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.4479042515158653,
+      "totalSeconds": 12.178606159985065
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.4647291973233223,
+      "totalSeconds": 2741.570571780205
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.864045787602663,
+      "totalSeconds": 78.63123742863536
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.4827440790832043,
+      "totalSeconds": 12.308853022754192
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.5820666998624802,
+      "totalSeconds": 2719.4528305009007
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.4583646804094315,
+      "totalSeconds": 12.191945172846317
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.5561678819358349,
+      "totalSeconds": 2786.220260132104
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.952588014304638,
+      "totalSeconds": 89.86874483153224
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.5746475048363209,
+      "totalSeconds": 12.75304126739502
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.5871200747787952,
+      "totalSeconds": 2742.1208443641663
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.8581806235015392,
+      "totalSeconds": 89.57823771610856
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.4445992708206177,
+      "totalSeconds": 12.393426410853863
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.554345689713955,
+      "totalSeconds": 2694.662498537451
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.8576989769935608,
+      "totalSeconds": 88.1134475544095
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.5263547264039516,
+      "totalSeconds": 2856.290705371648
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.8951005451381207,
+      "totalSeconds": 95.16186426207423
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.4287034161388874,
+      "totalSeconds": 12.218156833201647
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.5534563213586807,
+      "totalSeconds": 3138.684976376593
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.4373612776398659,
+      "totalSeconds": 12.122332029044628
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.8055250719189644,
+      "totalSeconds": 87.88123412430286
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.8112280033528805,
+      "totalSeconds": 85.28694122284651
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.4227416068315506,
+      "totalSeconds": 12.119353160262108
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.4957940503954887,
+      "totalSeconds": 2702.870871029794
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.462080717086792,
+      "totalSeconds": 12.132421914488077
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.8433219604194164,
+      "totalSeconds": 88.4825607649982
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.5430513769388199,
+      "totalSeconds": 2709.003346387297
+    },
+    {
+      "library": "memfs",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.5045775696635246,
+      "totalSeconds": 2725.2537705153227
+    },
+    {
+      "library": "memfs",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.8402893170714378,
+      "totalSeconds": 83.12249974533916
+    },
+    {
+      "library": "memfs",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.4256483614444733,
+      "totalSeconds": 12.183298379182816
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.7013724595308304,
+      "totalSeconds": 11.234663147479296
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.3112490363419056,
+      "totalSeconds": 3.040864896029234
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.543034665286541,
+      "totalSeconds": 123.87899962812662
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.320382270962,
+      "totalSeconds": 3.0620774142444134
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.5364544875919819,
+      "totalSeconds": 122.56131840124726
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.700200792402029,
+      "totalSeconds": 11.28898373618722
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.6672091521322727,
+      "totalSeconds": 11.199349626898766
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.54200778901577,
+      "totalSeconds": 122.57792611420155
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.2980554178357124,
+      "totalSeconds": 2.9958972968161106
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.70178984105587,
+      "totalSeconds": 11.33973690867424
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.3228806108236313,
+      "totalSeconds": 3.048704829066992
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.5204483047127724,
+      "totalSeconds": 127.98632951825857
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.2940911687910557,
+      "totalSeconds": 2.9930196180939674
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.6863724999129772,
+      "totalSeconds": 10.995240349322557
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.5211140662431717,
+      "totalSeconds": 125.3211649954319
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.558825321495533,
+      "totalSeconds": 126.2558190189302
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.3038837760686874,
+      "totalSeconds": 3.00542401522398
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.667742047458887,
+      "totalSeconds": 10.835006684064865
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.5467066243290901,
+      "totalSeconds": 125.65500331670046
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.4094950892031193,
+      "totalSeconds": 3.2598482742905617
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.8116084076464176,
+      "totalSeconds": 11.61364258825779
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.4393032863736153,
+      "totalSeconds": 3.3021050952374935
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.5711521096527576,
+      "totalSeconds": 127.61569994315505
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.844137817621231,
+      "totalSeconds": 11.466723844408989
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.8579847253859043,
+      "totalSeconds": 11.319701619446278
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.7447005733847618,
+      "totalSeconds": 122.3088803589344
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.4164591655135155,
+      "totalSeconds": 3.238246388733387
+    },
+    {
+      "library": "memory-fs",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.4008633866906166,
+      "totalSeconds": 3.2254983969032764
+    },
+    {
+      "library": "memory-fs",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.6445632353425026,
+      "totalSeconds": 122.00979499518871
+    },
+    {
+      "library": "memory-fs",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.8335595279932022,
+      "totalSeconds": 11.837571009993553
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.2558308616280556,
+      "totalSeconds": 15.407613903284073
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.1996040977537632,
+      "totalSeconds": 178.23218193277717
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 0.9585560373961926,
+      "totalSeconds": 4.040332227945328
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.242909498512745,
+      "totalSeconds": 14.717006176710129
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 0.9276260249316692,
+      "totalSeconds": 3.9939471296966076
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.1953982785344124,
+      "totalSeconds": 183.10121550783515
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 0.9129745438694954,
+      "totalSeconds": 3.9884932190179825
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.569898683577776,
+      "totalSeconds": 15.344383552670479
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.1701415926218033,
+      "totalSeconds": 185.56140368431807
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.2400872893631458,
+      "totalSeconds": 14.691984921693802
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.1407764926552773,
+      "totalSeconds": 4.221193011850119
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.088195651769638,
+      "totalSeconds": 186.50999296084046
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 0.884438656270504,
+      "totalSeconds": 4.122137933969498
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.5736861824989319,
+      "totalSeconds": 14.84520498290658
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.0957310050725937,
+      "totalSeconds": 187.61443451419473
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 0.8683088757097721,
+      "totalSeconds": 3.8537431433796883
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.1398657336831093,
+      "totalSeconds": 185.42113709822297
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.213940978050232,
+      "totalSeconds": 14.800915952771902
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.0940039083361626,
+      "totalSeconds": 182.51570976525545
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 0.8685338012874126,
+      "totalSeconds": 3.846798315644264
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.6990710124373436,
+      "totalSeconds": 15.214889980852604
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.167298398911953,
+      "totalSeconds": 184.871079351753
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.1242608055472374,
+      "totalSeconds": 14.944341763854027
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 0.9100327529013157,
+      "totalSeconds": 3.913867026567459
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 0.9336985982954502,
+      "totalSeconds": 4.0309366919100285
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.0954099707305431,
+      "totalSeconds": 184.22451509535313
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.133837390691042,
+      "totalSeconds": 14.128014635294676
+    },
+    {
+      "library": "morgan",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 0.8915780745446682,
+      "totalSeconds": 4.123086862266064
+    },
+    {
+      "library": "morgan",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.1199927926063538,
+      "totalSeconds": 185.41968462988734
+    },
+    {
+      "library": "morgan",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.1316669210791588,
+      "totalSeconds": 14.8874836191535
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.2090019583702087,
+      "totalSeconds": 396.8510885313153
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.1310386471450329,
+      "totalSeconds": 50.13126666843891
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.11602982878685,
+      "totalSeconds": 7.82548276335001
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.1532116904854774,
+      "totalSeconds": 50.38249085843563
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.0961125902831554,
+      "totalSeconds": 394.38217701017857
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.1147827953100204,
+      "totalSeconds": 7.828205242753029
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.1165003068745136,
+      "totalSeconds": 7.843200083822012
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.1354744732379913,
+      "totalSeconds": 44.43771832808852
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.0931141451001167,
+      "totalSeconds": 394.36180974170566
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.102463185787201,
+      "totalSeconds": 391.1156777366996
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.1339989565312862,
+      "totalSeconds": 52.22905430570245
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.126478098332882,
+      "totalSeconds": 7.838273949921131
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.1710124425590038,
+      "totalSeconds": 51.05045687407255
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.63706748560071,
+      "totalSeconds": 8.356122300028801
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.1057849638164043,
+      "totalSeconds": 389.2216421365738
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.1559117510914803,
+      "totalSeconds": 52.22705451399088
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.122444562613964,
+      "totalSeconds": 7.865858066827059
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.1391324624419212,
+      "totalSeconds": 400.7627768367529
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.1247629895806313,
+      "totalSeconds": 398.8907565549016
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.1208359971642494,
+      "totalSeconds": 7.83961633220315
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.123085681349039,
+      "totalSeconds": 50.8884098418057
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.141771525144577,
+      "totalSeconds": 51.7349464148283
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.1180559806525707,
+      "totalSeconds": 394.83425859734416
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.0942107886075974,
+      "totalSeconds": 7.837996616959572
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.108795564621687,
+      "totalSeconds": 398.30288179963827
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.1528475433588028,
+      "totalSeconds": 46.8862771615386
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.12727627530694,
+      "totalSeconds": 7.937523230910301
+    },
+    {
+      "library": "prop-types",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.1271430812776089,
+      "totalSeconds": 52.782846342772245
+    },
+    {
+      "library": "prop-types",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.1221049688756466,
+      "totalSeconds": 8.135367460548878
+    },
+    {
+      "library": "prop-types",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.1087449006736279,
+      "totalSeconds": 396.82829485088587
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.268499981611967,
+      "totalSeconds": 2721.313611533493
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.1801983341574669,
+      "totalSeconds": 584.9767950810492
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.1986885033547878,
+      "totalSeconds": 53.651679668575525
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.2621603049337864,
+      "totalSeconds": 2706.893255673349
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.1816126219928265,
+      "totalSeconds": 53.71599439159036
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.1458343155682087,
+      "totalSeconds": 568.104122236371
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.1556060798466206,
+      "totalSeconds": 54.040803015232086
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.1499161459505558,
+      "totalSeconds": 547.5858575999737
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.2849226221442223,
+      "totalSeconds": 2778.0662340708077
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.2651184126734734,
+      "totalSeconds": 2641.5586558021605
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.1381397657096386,
+      "totalSeconds": 586.1300431527197
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.1879449523985386,
+      "totalSeconds": 53.21681251376867
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.1650304459035397,
+      "totalSeconds": 53.284123703837395
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.3142189718782902,
+      "totalSeconds": 2699.675461087376
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.1752118319272995,
+      "totalSeconds": 598.5972298048437
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.2877401560544968,
+      "totalSeconds": 2764.0910875052214
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.1782023422420025,
+      "totalSeconds": 602.2915584892035
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.1729254238307476,
+      "totalSeconds": 54.65665704011917
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.1566542871296406,
+      "totalSeconds": 566.1541321463883
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.3080981224775314,
+      "totalSeconds": 2768.0643467754126
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.1664332933723927,
+      "totalSeconds": 53.98877310752869
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.2341998033225536,
+      "totalSeconds": 639.9725529588759
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.3341443948447704,
+      "totalSeconds": 2724.1079353541136
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.1588697843253613,
+      "totalSeconds": 54.41861718893051
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.2545429356396198,
+      "totalSeconds": 2898.752486165613
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.1918905340135098,
+      "totalSeconds": 638.2898244410753
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.1718884110450745,
+      "totalSeconds": 54.78159607201815
+    },
+    {
+      "library": "redux",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.1977746598422527,
+      "totalSeconds": 54.30685569345951
+    },
+    {
+      "library": "redux",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.3122752904891968,
+      "totalSeconds": 2846.383450027555
+    },
+    {
+      "library": "redux",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.1888575814664364,
+      "totalSeconds": 603.019325632602
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.559263963252306,
+      "totalSeconds": 186.0275253430009
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.6317244209349155,
+      "totalSeconds": 16.592244807630777
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.2338740602135658,
+      "totalSeconds": 3.528398249298334
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.560025580227375,
+      "totalSeconds": 183.9244932755828
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.6346596963703632,
+      "totalSeconds": 15.986005142331123
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.2202937230467796,
+      "totalSeconds": 3.451732248067856
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.5298019498586655,
+      "totalSeconds": 183.20791495218873
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.6564035415649414,
+      "totalSeconds": 16.48110306635499
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.212455827742815,
+      "totalSeconds": 3.44579428806901
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.1687563732266426,
+      "totalSeconds": 3.41512880474329
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.6343159936368465,
+      "totalSeconds": 184.86770771816373
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.6050268821418285,
+      "totalSeconds": 16.24956703186035
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.605407815426588,
+      "totalSeconds": 15.915294174104929
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.5378001779317856,
+      "totalSeconds": 192.12488228827715
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.218799665570259,
+      "totalSeconds": 3.434241835027933
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.5039963275194168,
+      "totalSeconds": 184.46655263006687
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.191163331270218,
+      "totalSeconds": 3.3863246887922287
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.5875921547412872,
+      "totalSeconds": 16.098744556307793
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.5057418681681156,
+      "totalSeconds": 183.87383733317256
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.2316198982298374,
+      "totalSeconds": 3.475928109139204
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 1.5755605176091194,
+      "totalSeconds": 16.36296369880438
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.4962100498378277,
+      "totalSeconds": 188.30302799865603
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.5962569676339626,
+      "totalSeconds": 16.583008516579866
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.1910641118884087,
+      "totalSeconds": 3.3868284039199352
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.5909640304744244,
+      "totalSeconds": 16.64901328459382
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.4612433314323425,
+      "totalSeconds": 3.9889784902334213
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.4994552209973335,
+      "totalSeconds": 187.03611017018557
+    },
+    {
+      "library": "send",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.295694686472416,
+      "totalSeconds": 3.696598496288061
+    },
+    {
+      "library": "send",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 2.233130596578121,
+      "totalSeconds": 16.808354567736387
+    },
+    {
+      "library": "send",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.566178284585476,
+      "totalSeconds": 193.18416183441877
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 0,
+      "transformSeconds": 1.681172139942646,
+      "totalSeconds": 16.294545110315084
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 0,
+      "transformSeconds": 1.7450951673090458,
+      "totalSeconds": 4.274125020951033
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 0,
+      "transformSeconds": 1.6517776399850845,
+      "totalSeconds": 194.36491794139147
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 1,
+      "transformSeconds": 1.8050382658839226,
+      "totalSeconds": 15.70818630233407
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 1,
+      "transformSeconds": 1.264491867274046,
+      "totalSeconds": 3.4028316624462605
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 1,
+      "transformSeconds": 1.5943886302411556,
+      "totalSeconds": 191.8538938947022
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 2,
+      "transformSeconds": 1.2771297879517078,
+      "totalSeconds": 3.5152580961585045
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 2,
+      "transformSeconds": 1.6892616525292397,
+      "totalSeconds": 191.8417792469263
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 2,
+      "transformSeconds": 1.8166878707706928,
+      "totalSeconds": 16.45937842130661
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 3,
+      "transformSeconds": 1.7061313576996326,
+      "totalSeconds": 198.0118537992239
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 3,
+      "transformSeconds": 1.1943603605031967,
+      "totalSeconds": 3.405535213649273
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 3,
+      "transformSeconds": 1.753141064196825,
+      "totalSeconds": 16.816190518438816
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 4,
+      "transformSeconds": 1.8248117603361607,
+      "totalSeconds": 16.20893168449402
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 4,
+      "transformSeconds": 1.5558033101260662,
+      "totalSeconds": 192.6949655301869
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 4,
+      "transformSeconds": 1.21517738327384,
+      "totalSeconds": 3.2763038463890553
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 5,
+      "transformSeconds": 1.194837298244238,
+      "totalSeconds": 3.2744695134460926
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 5,
+      "transformSeconds": 1.676612477749586,
+      "totalSeconds": 16.31895174458623
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 5,
+      "transformSeconds": 1.5641281232237816,
+      "totalSeconds": 184.56481808796525
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 6,
+      "transformSeconds": 1.7359062656760216,
+      "totalSeconds": 185.46618258953094
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 6,
+      "transformSeconds": 2.3598750829696655,
+      "totalSeconds": 16.85442254692316
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 6,
+      "transformSeconds": 1.1663412153720856,
+      "totalSeconds": 3.2515124455094337
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 7,
+      "transformSeconds": 1.7764377854764462,
+      "totalSeconds": 15.634614065289497
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 7,
+      "transformSeconds": 1.2450737841427326,
+      "totalSeconds": 3.5553026273846626
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 7,
+      "transformSeconds": 1.5330438874661922,
+      "totalSeconds": 191.73497373610735
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 8,
+      "transformSeconds": 1.1700224578380585,
+      "totalSeconds": 3.27635183557868
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 8,
+      "transformSeconds": 1.997890006750822,
+      "totalSeconds": 16.16568349301815
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 8,
+      "transformSeconds": 1.6277721300721169,
+      "totalSeconds": 191.1908645145595
+    },
+    {
+      "library": "serve-static",
+      "method": "hybrid",
+      "repetition": 9,
+      "transformSeconds": 1.7281977534294128,
+      "totalSeconds": 16.70077608153224
+    },
+    {
+      "library": "serve-static",
+      "method": "sscg",
+      "repetition": 9,
+      "transformSeconds": 1.6274892427027225,
+      "totalSeconds": 191.5850978307426
+    },
+    {
+      "library": "serve-static",
+      "method": "sdcg",
+      "repetition": 9,
+      "transformSeconds": 1.223118681460619,
+      "totalSeconds": 3.347053851932287
+    }
+  ]
+}

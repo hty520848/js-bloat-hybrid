@@ -1,0 +1,221 @@
+[
+  {
+    "library": "body-parser",
+    "version": "1.19.0",
+    "metadataUrl": "https://registry.npmjs.org/body-parser/1.19.0",
+    "dist": {
+      "shasum": "96b2709e57c9c4e09a6fd66a8fd979844f69f08a",
+      "tarball": "https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz",
+      "integrity": "sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw=="
+    },
+    "archive": "body-parser-1.19.0.tgz",
+    "sha256": "025459bcf55c23696b24a8f17125a2b40b9a41ecbbdbe174d4e356e8aa4f7ea3",
+    "releaseDependencies": {
+      "qs": "6.7.0",
+      "depd": "~1.1.2",
+      "bytes": "3.1.0",
+      "debug": "2.6.9",
+      "type-is": "~1.6.17",
+      "raw-body": "2.4.0",
+      "iconv-lite": "0.4.24",
+      "http-errors": "1.7.2",
+      "on-finished": "~2.3.0",
+      "content-type": "~1.0.4"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "compression",
+    "version": "1.7.4",
+    "metadataUrl": "https://registry.npmjs.org/compression/1.7.4",
+    "dist": {
+      "shasum": "95523eff170ca57c29a0ca41e6fe131f41e5bb8f",
+      "tarball": "https://registry.npmjs.org/compression/-/compression-1.7.4.tgz",
+      "integrity": "sha512-jaSIDzP9pZVS4ZfQ+TzvtiWhdpFhE2RDHz8QJkpX9SIpLq88VueF5jJw6t+6CUQcAoA6t+x89MLrWAqpfDE8iQ=="
+    },
+    "archive": "compression-1.7.4.tgz",
+    "sha256": "dc260cc26ec047105b40dd7f16d0ca1f2c8d7576daa2d69b4cd5b64ad225153c",
+    "releaseDependencies": {
+      "vary": "~1.1.2",
+      "bytes": "3.0.0",
+      "debug": "2.6.9",
+      "accepts": "~1.3.5",
+      "on-headers": "~1.0.2",
+      "safe-buffer": "5.1.2",
+      "compressible": "~2.0.16"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "css-loader",
+    "version": "4.2.1",
+    "metadataUrl": "https://registry.npmjs.org/css-loader/4.2.1",
+    "dist": {
+      "shasum": "9f48fd7eae1219d629a3f085ba9a9102ca1141a7",
+      "tarball": "https://registry.npmjs.org/css-loader/-/css-loader-4.2.1.tgz",
+      "integrity": "sha512-MoqmF1if7Z0pZIEXA4ZF9PgtCXxWbfzfJM+3p+OYfhcrwcqhaCRb74DSnfzRl7e024xEiCRn5hCvfUbTf2sgFA=="
+    },
+    "archive": "css-loader-4.2.1.tgz",
+    "sha256": "6e419d1d3f2258c616e9e6ce9f29d748566ae5fe66e4dd609b16215c3343d77e",
+    "releaseDependencies": {
+      "cssesc": "^3.0.0",
+      "semver": "^7.3.2",
+      "postcss": "^7.0.32",
+      "camelcase": "^6.0.0",
+      "icss-utils": "^4.1.1",
+      "loader-utils": "^2.0.0",
+      "schema-utils": "^2.7.0",
+      "normalize-path": "^3.0.0",
+      "postcss-value-parser": "^4.1.0",
+      "postcss-modules-scope": "^2.2.0",
+      "postcss-modules-values": "^3.0.0",
+      "postcss-modules-extract-imports": "^2.0.0",
+      "postcss-modules-local-by-default": "^3.0.3"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "memfs",
+    "version": "3.2.0",
+    "metadataUrl": "https://registry.npmjs.org/memfs/3.2.0",
+    "dist": {
+      "shasum": "f9438e622b5acd1daa8a4ae160c496fdd1325b26",
+      "tarball": "https://registry.npmjs.org/memfs/-/memfs-3.2.0.tgz",
+      "integrity": "sha512-f/xxz2TpdKv6uDn6GtHee8ivFyxwxmPuXatBb1FBwxYNuVpbM3k/Y1Z+vC0mH/dIXXrukYfe3qe5J32Dfjg93A=="
+    },
+    "archive": "memfs-3.2.0.tgz",
+    "sha256": "4343dc8dff3d9453fae3629ca20866d41c002c5de0a692fe9d6ac17e675e19e2",
+    "releaseDependencies": {
+      "fs-monkey": "1.0.1"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "memory-fs",
+    "version": "0.5.0",
+    "metadataUrl": "https://registry.npmjs.org/memory-fs/0.5.0",
+    "dist": {
+      "shasum": "324c01288b88652966d161db77838720845a8e3c",
+      "tarball": "https://registry.npmjs.org/memory-fs/-/memory-fs-0.5.0.tgz",
+      "integrity": "sha512-jA0rdU5KoQMC0e6ppoNRtpp6vjFq6+NY7r8hywnC7V+1Xj/MtHwGIbB1QaK/dunyjWteJzmkpd7ooeWg10T7GA=="
+    },
+    "archive": "memory-fs-0.5.0.tgz",
+    "sha256": "ba5a22e60aea9a08ef4608fe71bc5d479db7ad2210979524fe112c7924c981c9",
+    "releaseDependencies": {
+      "errno": "^0.1.3",
+      "readable-stream": "^2.0.1"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "morgan",
+    "version": "1.10.0",
+    "dist": {
+      "shasum": "091778abc1fc47cd3509824653dae1faab6b17d7",
+      "tarball": "https://registry.npmjs.org/morgan/-/morgan-1.10.0.tgz",
+      "integrity": "sha512-AbegBVI4sh6El+1gNwvD5YIck7nSA36weD7xvIxG4in80j/UoK8AEGaWnnz8v1GxonMCltmlNs5ZKbGvl9b1XQ=="
+    },
+    "archive": "morgan-1.10.0.tgz",
+    "sha256": "4077fc5c68582fca701da7bde53c0b797a29cd895d41ac35b402d9df2f2197b5",
+    "releaseDependencies": {
+      "depd": "~2.0.0",
+      "debug": "2.6.9",
+      "basic-auth": "~2.0.1",
+      "on-headers": "~1.0.2",
+      "on-finished": "~2.3.0"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "prop-types",
+    "version": "15.7.2",
+    "metadataUrl": "https://registry.npmjs.org/prop-types/15.7.2",
+    "dist": {
+      "shasum": "52c41e75b8c87e72b9d9360e0206b99dcbffa6c5",
+      "tarball": "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz",
+      "integrity": "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
+    },
+    "archive": "prop-types-15.7.2.tgz",
+    "sha256": "f7904f9e8bfc54965b7fc717ba718ed9dbf6beb88303d896de0a7a9b329b8375",
+    "releaseDependencies": {
+      "react-is": "^16.8.1",
+      "loose-envify": "^1.4.0",
+      "object-assign": "^4.1.1"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "redux",
+    "version": "4.0.4",
+    "metadataUrl": "https://registry.npmjs.org/redux/4.0.4",
+    "dist": {
+      "shasum": "4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796",
+      "tarball": "https://registry.npmjs.org/redux/-/redux-4.0.4.tgz",
+      "integrity": "sha512-vKv4WdiJxOWKxK0yRoaK3Y4pxxB0ilzVx6dszU2W8wLxlb2yikRph4iV/ymtdJ6ZxpBLFbyrxklnT5yBbQSl3Q=="
+    },
+    "archive": "redux-4.0.4.tgz",
+    "sha256": "78b863ed395c2deb86139c16fe04418ece4c4e8521ae46c60e8bdb9357df32ef",
+    "releaseDependencies": {
+      "loose-envify": "^1.4.0",
+      "symbol-observable": "^1.2.0"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "send",
+    "version": "0.17.1",
+    "metadataUrl": "https://registry.npmjs.org/send/0.17.1",
+    "dist": {
+      "shasum": "c1d8b059f7900f7466dd4938bdc44e11ddb376c8",
+      "tarball": "https://registry.npmjs.org/send/-/send-0.17.1.tgz",
+      "integrity": "sha512-BsVKsiGcQMFwT8UxypobUKyv7irCNRHk1T0G680vk88yf6LBByGcZJOTJCrTP2xVN6yI+XjPJcNuE3V4fT9sAg=="
+    },
+    "archive": "send-0.17.1.tgz",
+    "sha256": "d354b49eefa6b2f504680908c5635693c6a8e600508702a853909a433a14ba21",
+    "releaseDependencies": {
+      "ms": "2.1.1",
+      "depd": "~1.1.2",
+      "etag": "~1.8.1",
+      "mime": "1.6.0",
+      "debug": "2.6.9",
+      "fresh": "0.5.2",
+      "destroy": "~1.0.4",
+      "statuses": "~1.5.0",
+      "encodeurl": "~1.0.2",
+      "escape-html": "~1.0.3",
+      "http-errors": "~1.7.2",
+      "on-finished": "~2.3.0",
+      "range-parser": "~1.2.1"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  },
+  {
+    "library": "serve-static",
+    "version": "1.14.1",
+    "metadataUrl": "https://registry.npmjs.org/serve-static/1.14.1",
+    "dist": {
+      "shasum": "666e636dc4f010f7ef29970a88a674320898b2f9",
+      "tarball": "https://registry.npmjs.org/serve-static/-/serve-static-1.14.1.tgz",
+      "integrity": "sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7ecpZs+3mW+XbQZu9QCg=="
+    },
+    "archive": "serve-static-1.14.1.tgz",
+    "sha256": "01f63587e7f5edba7d79db89ad3c4f138019777e2f0f7997c07f2ba6c4be52dd",
+    "releaseDependencies": {
+      "send": "0.17.1",
+      "parseurl": "~1.3.3",
+      "encodeurl": "~1.0.2",
+      "escape-html": "~1.0.3"
+    },
+    "retrievedDate": "2026-10-24",
+    "identityPolicy": "Exact official tarball bytes; historical same-name snapshot is a separate cohort."
+  }
+]

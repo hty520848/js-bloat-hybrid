@@ -1,0 +1,224 @@
+{
+  "libraries": {
+    "body-parser": {
+      "express": [
+        "npm",
+        "test"
+      ],
+      "moleculer-web": [
+        "npm",
+        "test"
+      ],
+      "typescript-rest": [
+        "npm",
+        "test"
+      ],
+      "appium-base-driver": [
+        "npm",
+        "test"
+      ],
+      "karma": [
+        "npm",
+        "test"
+      ]
+    },
+    "compression": {
+      "cordova-serve": [
+        "npm",
+        "test"
+      ],
+      "hexo-server": [
+        "npm",
+        "test"
+      ],
+      "ember-cli": [
+        "npm",
+        "test"
+      ],
+      "koop-core": [
+        "npm",
+        "test"
+      ],
+      "server": [
+        "npm",
+        "test"
+      ]
+    },
+    "css-loader": {
+      "PowerBI-visuals-tools": [
+        "npm",
+        "test"
+      ],
+      "custom-react-scripts": [
+        "npm",
+        "test"
+      ],
+      "astroturf": [
+        "npm",
+        "test"
+      ],
+      "playroom": [
+        "npm",
+        "test"
+      ],
+      "docusaurus": [
+        "npm",
+        "test"
+      ]
+    },
+    "memfs": {
+      "class-component-converter": [
+        "npm",
+        "test"
+      ],
+      "artgen": [
+        "npm",
+        "test"
+      ],
+      "jaxom-ts": [
+        "npm",
+        "test"
+      ],
+      "zenobia-ts": [
+        "npm",
+        "test"
+      ],
+      "webpack-dev-middleware": [
+        "npm",
+        "test"
+      ]
+    },
+    "memory-fs": {
+      "vue-builder": [
+        "npm",
+        "test"
+      ],
+      "astroturf": [
+        "npm",
+        "test"
+      ],
+      "mochapack": [
+        "npm",
+        "test"
+      ],
+      "rax": [
+        "npm",
+        "test"
+      ],
+      "webpack": [
+        "npm",
+        "test"
+      ]
+    },
+    "morgan": {
+      "ember-cli": [
+        "npm",
+        "test"
+      ],
+      "appium-base-driver": [
+        "npm",
+        "test"
+      ],
+      "grunt-contrib-connect": [
+        "npm",
+        "test"
+      ],
+      "superstatic": [
+        "npm",
+        "test"
+      ],
+      "json-server": [
+        "npm",
+        "test"
+      ]
+    },
+    "prop-types": {
+      "react-loadable": [
+        "npm",
+        "test"
+      ],
+      "react-dates": [
+        "npm",
+        "test"
+      ],
+      "react-redux": [
+        "npm",
+        "test"
+      ],
+      "redux-form": [
+        "npm",
+        "test"
+      ],
+      "downshift": [
+        "npm",
+        "test"
+      ]
+    },
+    "redux": {
+      "Choices": [
+        "npm",
+        "test"
+      ],
+      "found": [
+        "npm",
+        "test"
+      ],
+      "redux-ignore": [
+        "npm",
+        "test"
+      ],
+      "Griddle": [
+        "npm",
+        "test"
+      ],
+      "react-beautiful-dnd": [
+        "npm",
+        "test"
+      ]
+    },
+    "send": {
+      "connect-gzip-static": [
+        "npm",
+        "test"
+      ],
+      "lasso": [
+        "npm",
+        "test"
+      ],
+      "gitbook": [
+        "npm",
+        "test"
+      ],
+      "serve-static": [
+        "npm",
+        "test"
+      ],
+      "node-restify": [
+        "npm",
+        "test"
+      ]
+    },
+    "serve-static": {
+      "connect-gzip-static": [
+        "npm",
+        "test"
+      ],
+      "gulp-connect": [
+        "npm",
+        "test"
+      ],
+      "node-soap": [
+        "npm",
+        "test"
+      ],
+      "moleculer-web": [
+        "npm",
+        "test"
+      ],
+      "reload": [
+        "npm",
+        "test"
+      ]
+    }
+  }
+}

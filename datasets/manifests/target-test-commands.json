@@ -1,0 +1,134 @@
+[
+  {
+    "library": "body-parser",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks",
+      "--require",
+      "test/support/env",
+      "test/"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "817383dcb1ca7e769c05276b27696095e489148b625530f771943099c6d8bd55",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "compression",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "58ea75c58ccf904851aba1bc9a486e5066a40771aaa1fb48dd5cfcd2f6c4cf57",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "css-loader",
+    "command": [
+      "{nodeTest}",
+      "node_modules/jest/bin/jest.js",
+      "--runInBand"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "163507808e12179f362de8b4d1280319b5195c58f373891a8a7ba4ca90178185",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "memfs",
+    "command": [
+      "{nodeTest}",
+      "node_modules/jest/bin/jest.js",
+      "--runInBand",
+      "--resolver={PACKAGE}/src/metrics/compiled_source_resolver.js"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "be0923aa3be91dffb6b00689c20adac1bb59fee2bd6f34bf71bdd227a6172404",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "memory-fs",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "3ddf867c352002f369d1838876e95b86f081d84cb87c5a25574d912c2ce4cd43",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "morgan",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "b33a4334895414c2fa6d5703f471e9728b09dfac5269671622294883242328d7",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "prop-types",
+    "command": [
+      "{nodeTest}",
+      "node_modules/jest/bin/jest.js",
+      "--runInBand"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "d8869cc36672227a57f1443c4dad0b6c0e5c53c529a129a4c774430f92fbce26",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "redux",
+    "command": [
+      "{nodeTest}",
+      "node_modules/jest/bin/jest.js",
+      "--runInBand"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "5ebbbb39ae641ad37ab2ff39993ce7bf8f3fd8935e4d2d2582549a85043c86bf",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "send",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "c2b728b3ce5554906f5076c7cff65c04d496e4fa7e85f8c37103a4185eed951e",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  },
+  {
+    "library": "serve-static",
+    "command": [
+      "{nodeTest}",
+      "node_modules/mocha/bin/_mocha",
+      "--reporter",
+      "spec",
+      "--bail",
+      "--check-leaks"
+    ],
+    "cwd": "{TARGET}",
+    "productionLockSha256": "16ce4bf1786742389c859a03e8dc6a58db436bd5015463cd66cd45848311935f",
+    "qualification": "See separate run ledger; inclusion here is not a passed test assertion."
+  }
+]

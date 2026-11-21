@@ -1,0 +1,14 @@
+/artifacts/
+/work/
+/runs/
+/evidence/
+/.release-inputs/
+/inputs/*
+!/inputs/Modules.qll
+/config/machine.frozen.json
+/config/machine.local.json
+/provenance/package-audit*.json
+__pycache__/
+*.py[cod]
+node_modules/
+*.partial

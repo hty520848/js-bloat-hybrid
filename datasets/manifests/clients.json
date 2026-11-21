@@ -1,0 +1,621 @@
+{
+  "source": {
+    "title": "Stubbifer: Debloating Dynamic Server-Side JavaScript Applications (Code Artifact + Experiments)",
+    "doi": "10.5281/zenodo.5599914",
+    "archive": "stubbifier.tgz",
+    "bytes": 3611954763,
+    "md5": "a9877c430f5307db61b7f89f7f9c04bb"
+  },
+  "targetLibraries": 10,
+  "totalClients": 50,
+  "libraries": {
+    "body-parser": [
+      {
+        "directory": "appium-base-driver",
+        "packageName": "appium-base-driver",
+        "packageVersion": "7.0.1",
+        "gitCommit": "9c03983660e14c9866bdfdf79034314051719769",
+        "testCommand": "gulp once",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.18.2"
+        },
+        "installedTargetVersion": "1.19.0"
+      },
+      {
+        "directory": "express",
+        "packageName": "express",
+        "packageVersion": "4.17.1",
+        "gitCommit": "5596222f6a6e0eea74f6fb38915b071d98122a2f",
+        "testCommand": "mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "1.19.0"
+        },
+        "installedTargetVersion": "1.19.0"
+      },
+      {
+        "directory": "karma",
+        "packageName": "karma",
+        "packageVersion": "5.1.1",
+        "gitCommit": "cbdd9da2d39b79315884bc5a516a0407fb9051c3",
+        "testCommand": "grunt test:unit",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.19.0"
+        },
+        "installedTargetVersion": "1.19.0"
+      },
+      {
+        "directory": "moleculer-web",
+        "packageName": "moleculer-web",
+        "packageVersion": "0.10.0-beta1",
+        "gitCommit": "f4669daaede6ec55e29e32bd6f32c957e58614e9",
+        "testCommand": "jest --coverage --forceExit",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.19.0"
+        },
+        "installedTargetVersion": "1.19.0"
+      },
+      {
+        "directory": "typescript-rest",
+        "packageName": "typescript-rest",
+        "packageVersion": "3.0.2",
+        "gitCommit": "bc1491d694bc60dda5b8a2bda31f5f49a729aa93",
+        "testCommand": "cross-env NODE_ENV=test mocha --exit",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.19.0"
+        },
+        "installedTargetVersion": "1.19.0"
+      }
+    ],
+    "compression": [
+      {
+        "directory": "cordova-serve",
+        "packageName": "cordova-serve",
+        "packageVersion": "4.0.1-dev",
+        "gitCommit": "48807c47a9727be5f5c32e50545eb7f4a26ad6c1",
+        "testCommand": "jasmine \"spec/**/*.spec.js\"",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.7.4"
+        },
+        "installedTargetVersion": "1.7.4"
+      },
+      {
+        "directory": "ember-cli",
+        "packageName": "ember-cli",
+        "packageVersion": "3.21.0-beta.1",
+        "gitCommit": "fa03d0ad4bb05e1b273681f342c138bdf2088a0f",
+        "testCommand": "node --unhandled-rejections=strict tests/runner",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.7.4"
+        },
+        "installedTargetVersion": "1.7.4"
+      },
+      {
+        "directory": "hexo-server",
+        "packageName": "hexo-server",
+        "packageVersion": "2.0.0",
+        "gitCommit": "569346949ca1aced78f9a957921dfa6b2f90cb2e",
+        "testCommand": "mocha test/index.js",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.7.4"
+        },
+        "installedTargetVersion": "1.7.4"
+      },
+      {
+        "directory": "koop-core",
+        "packageName": "koop",
+        "packageVersion": "4.0.1",
+        "gitCommit": "f60422eb04b17cb4eb91b0c840044cdf99576e4f",
+        "testCommand": "standard && mocha test --recursive -t 5000",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.7.4"
+        },
+        "installedTargetVersion": "1.7.4"
+      },
+      {
+        "directory": "server",
+        "packageName": "server",
+        "packageVersion": "1.0.30",
+        "gitCommit": "a6fd40e770d08aaa6b9e54ed459efe31130b9477",
+        "testCommand": "jest --coverage --forceExit",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.6.2"
+        },
+        "installedTargetVersion": "1.7.4"
+      }
+    ],
+    "css-loader": [
+      {
+        "directory": "PowerBI-visuals-tools",
+        "packageName": "powerbi-visuals-tools",
+        "packageVersion": "3.1.15",
+        "gitCommit": "aa7f15f1bab7afd2c611f0a0edf8902c0f4e1f80",
+        "testCommand": "npm run clean-tests && npm run lint && npm run jasmine",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.4.2"
+        },
+        "installedTargetVersion": "4.2.1"
+      },
+      {
+        "directory": "astroturf",
+        "packageName": "astroturf",
+        "packageVersion": "0.10.4",
+        "gitCommit": "9d0c9c02f211c4c03a17cdcd398126cac4776232",
+        "testCommand": "yarn test:ts && jest",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.0.0"
+        },
+        "installedTargetVersion": "4.2.1"
+      },
+      {
+        "directory": "custom-react-scripts",
+        "packageName": null,
+        "packageVersion": null,
+        "gitCommit": "3a8d74048cf8cbe1ede0689762c198126a9db2d6",
+        "testCommand": "cd packages/react-scripts && node scripts/test.js --env=jsdom",
+        "declaredDependency": null,
+        "installedTargetVersion": "4.2.1"
+      },
+      {
+        "directory": "docusaurus",
+        "packageName": null,
+        "packageVersion": null,
+        "gitCommit": "f4ca61be81f390457a2dce411786966a4803dec0",
+        "testCommand": "jest",
+        "declaredDependency": null,
+        "installedTargetVersion": "4.2.1"
+      },
+      {
+        "directory": "playroom",
+        "packageName": "playroom",
+        "packageVersion": "0.0.0-semantically-released",
+        "gitCommit": "0e38f952a8d261210143f59ee26a64e34b4a1e1a",
+        "testCommand": "jest src",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.4.2"
+        },
+        "installedTargetVersion": "4.2.1"
+      }
+    ],
+    "memfs": [
+      {
+        "directory": "artgen",
+        "packageName": "@hisorange/artgen",
+        "packageVersion": "0.0.8",
+        "gitCommit": "bda4f65003976b11eb44eafa2a777d3035a65707",
+        "testCommand": "jest --collectCoverage=0",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.1.2"
+        },
+        "installedTargetVersion": "3.2.0"
+      },
+      {
+        "directory": "class-component-converter",
+        "packageName": "class-component-converter",
+        "packageVersion": "0.0.1",
+        "gitCommit": "e99b51a23ed818088603b20846c82fea93de9ee3",
+        "testCommand": "jest",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^2.15.4"
+        },
+        "installedTargetVersion": "3.2.0"
+      },
+      {
+        "directory": "jaxom-ts",
+        "packageName": "jaxom-ts",
+        "packageVersion": "0.0.18",
+        "gitCommit": "deaf6c43f12a063c0a07ed913e6a520ddbbc3e2b",
+        "testCommand": "npm run build:p && npm run t",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.1.2"
+        },
+        "installedTargetVersion": "3.2.0"
+      },
+      {
+        "directory": "webpack-dev-middleware",
+        "packageName": "webpack-dev-middleware",
+        "packageVersion": "4.0.0-rc.3",
+        "gitCommit": "ef3564a31e1268eae24c2ba43df0949e45cdf573",
+        "testCommand": "npm run test:coverage",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.2.0"
+        },
+        "installedTargetVersion": "3.2.0"
+      },
+      {
+        "directory": "zenobia-ts",
+        "packageName": "zenobia-ts",
+        "packageVersion": "0.0.2",
+        "gitCommit": "3bc541d3b4ec455e3d61fcf7de9df8e16236e8e1",
+        "testCommand": "npm run build:p && npm run t",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.1.2"
+        },
+        "installedTargetVersion": "3.2.0"
+      }
+    ],
+    "memory-fs": [
+      {
+        "directory": "astroturf",
+        "packageName": "astroturf",
+        "packageVersion": "0.10.4",
+        "gitCommit": "9d0c9c02f211c4c03a17cdcd398126cac4776232",
+        "testCommand": "yarn test:ts && jest",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^0.5.0"
+        },
+        "installedTargetVersion": "0.5.0"
+      },
+      {
+        "directory": "mochapack",
+        "packageName": "mochapack",
+        "packageVersion": "2.0.3",
+        "gitCommit": "556836c27e8e5e7d49b2feb515ba16c0a7a69620",
+        "testCommand": "yarn run clean-tmp && yarn run build && ts-mocha --timeout 10000 --recursive --require @babel/register --exit \"{test,src}/**/*.test.ts\"",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^0.4.1"
+        },
+        "installedTargetVersion": "0.5.0"
+      },
+      {
+        "directory": "rax",
+        "packageName": null,
+        "packageVersion": null,
+        "gitCommit": "3c9566f97b932b120eec135aab12987d4bfed5a5",
+        "testCommand": "npm run test:core",
+        "declaredDependency": null,
+        "installedTargetVersion": "0.5.0"
+      },
+      {
+        "directory": "vue-builder",
+        "packageName": "vue-builder",
+        "packageVersion": "1.7.2",
+        "gitCommit": "d3b53a2e50e26b0a41774b70da32aa870241b742",
+        "testCommand": "ava",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^0.4.1"
+        },
+        "installedTargetVersion": "0.5.0"
+      },
+      {
+        "directory": "webpack",
+        "packageName": "webpack",
+        "packageVersion": "5.0.0-beta.25",
+        "gitCommit": "50172039bd4901a0f83d696ef53d2650b19b34f3",
+        "testCommand": "node --max-old-space-size=4096 --trace-deprecation node_modules/jest-cli/bin/jest",
+        "declaredDependency": null,
+        "installedTargetVersion": "0.5.0"
+      }
+    ],
+    "morgan": [
+      {
+        "directory": "appium-base-driver",
+        "packageName": "appium-base-driver",
+        "packageVersion": "7.1.0",
+        "gitCommit": "ffaf365e7e6e6fd2ef9f34ec963768721e7ed33f",
+        "testCommand": "gulp once",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.9.0"
+        },
+        "installedTargetVersion": "1.10.0"
+      },
+      {
+        "directory": "ember-cli",
+        "packageName": "ember-cli",
+        "packageVersion": "3.21.0-beta.1",
+        "gitCommit": "fa03d0ad4bb05e1b273681f342c138bdf2088a0f",
+        "testCommand": "node --unhandled-rejections=strict tests/runner",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.10.0"
+        },
+        "installedTargetVersion": "1.10.0"
+      },
+      {
+        "directory": "grunt-contrib-connect",
+        "packageName": "grunt-contrib-connect",
+        "packageVersion": "3.0.0",
+        "gitCommit": "5c3d0e7855bba7d60b243188cb5be95874875970",
+        "testCommand": "grunt test",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.10.0"
+        },
+        "installedTargetVersion": "1.10.0"
+      },
+      {
+        "directory": "json-server",
+        "packageName": "json-server",
+        "packageVersion": "0.16.1",
+        "gitCommit": "b2c391cd587294f88cda6c6006955d3fdaacf5a5",
+        "testCommand": "npm run build && cross-env NODE_ENV=test jest && npm run lint",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.9.1"
+        },
+        "installedTargetVersion": "1.10.0"
+      },
+      {
+        "directory": "superstatic",
+        "packageName": "superstatic",
+        "packageVersion": "7.0.0",
+        "gitCommit": "ac12a362356982473c27bc056994238c4e523947",
+        "testCommand": "mocha test/unit/**",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.8.2"
+        },
+        "installedTargetVersion": "1.10.0"
+      }
+    ],
+    "prop-types": [
+      {
+        "directory": "downshift",
+        "packageName": "downshift",
+        "packageVersion": "0.0.0-semantically-released",
+        "gitCommit": "ba0ec8a51f3ee60d52b90122fc3efa7e26532160",
+        "testCommand": "kcd-scripts test --no-watch",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^15.7.2"
+        },
+        "installedTargetVersion": "15.7.2"
+      },
+      {
+        "directory": "react-dates",
+        "packageName": "react-dates",
+        "packageVersion": "21.8.0",
+        "gitCommit": "35766d6d17ec36704af0e9ab109a1f84205a9f4e",
+        "testCommand": "npm run build && npm run tests-only",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^15.7.2"
+        },
+        "installedTargetVersion": "15.7.2"
+      },
+      {
+        "directory": "react-loadable",
+        "packageName": "react-loadable",
+        "packageVersion": "5.5.0",
+        "gitCommit": "6201c5837b212d6244c57f3748f2b1375096beeb",
+        "testCommand": "jest --coverage",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^15.6.2"
+        },
+        "installedTargetVersion": "15.7.2"
+      },
+      {
+        "directory": "react-redux",
+        "packageName": "react-redux",
+        "packageVersion": "7.2.1",
+        "gitCommit": "f0124d71f959224fd1aebc02d50ce0069e58c5e5",
+        "testCommand": "jest",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^15.7.2"
+        },
+        "installedTargetVersion": "15.7.2"
+      },
+      {
+        "directory": "redux-form",
+        "packageName": "redux-form",
+        "packageVersion": "8.3.6",
+        "gitCommit": "b9d2aa4723dd9aa5386e74798d0dc0ce07dde099",
+        "testCommand": "jest",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^15.6.1"
+        },
+        "installedTargetVersion": "15.7.2"
+      }
+    ],
+    "redux": [
+      {
+        "directory": "Choices",
+        "packageName": "choices.js",
+        "packageVersion": "9.0.1",
+        "gitCommit": "115d88d97033fcc93bdd744f2a3067c1d8a730a6",
+        "testCommand": "TS_NODE_TRANSPILE_ONLY=true NODE_ENV=test mocha",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^4.0.4"
+        },
+        "installedTargetVersion": "4.0.4"
+      },
+      {
+        "directory": "Griddle",
+        "packageName": "griddle-react",
+        "packageVersion": "1.14.0",
+        "gitCommit": "184fc32276274631125b8f0c4e50096f385f7f6a",
+        "testCommand": "ava",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^4.0.1"
+        },
+        "installedTargetVersion": "4.0.4"
+      },
+      {
+        "directory": "found",
+        "packageName": "found",
+        "packageVersion": "0.5.9",
+        "gitCommit": "fcd8de2c7a8d48ccea4a877841ccb8a98528b21b",
+        "testCommand": "npm run lint && npm run test:ts && npm run testonly -- --coverage",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^4.0.4"
+        },
+        "installedTargetVersion": "4.0.4"
+      },
+      {
+        "directory": "react-beautiful-dnd",
+        "packageName": "react-beautiful-dnd",
+        "packageVersion": "13.0.0",
+        "gitCommit": "ec06fa266e1617cab2402e0613b36d88b9547f7f",
+        "testCommand": "jest --config ./jest.config.js",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^4.0.4"
+        },
+        "installedTargetVersion": "4.0.4"
+      },
+      {
+        "directory": "redux-ignore",
+        "packageName": "redux-ignore",
+        "packageVersion": "1.2.5",
+        "gitCommit": "2f1771606a1eb9d8f8cdce1441c610a512bc45db",
+        "testCommand": "NODE_ENV=test ./node_modules/.bin/mocha --compilers js:babel-core/register --recursive",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^3.3.1"
+        },
+        "installedTargetVersion": "4.0.4"
+      }
+    ],
+    "send": [
+      {
+        "directory": "connect-gzip-static",
+        "packageName": "connect-gzip-static",
+        "packageVersion": "2.1.1",
+        "gitCommit": "907ae4791fd40461f6e2eed798a4d7091a39241b",
+        "testCommand": "make lint test",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "~0"
+        },
+        "installedTargetVersion": "0.17.1"
+      },
+      {
+        "directory": "gitbook",
+        "packageName": "gitbook",
+        "packageVersion": "3.2.3",
+        "gitCommit": "6c6ef7f4af32a2977e44dd23d3feb6ebf28970f4",
+        "testCommand": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "0.13.2"
+        },
+        "installedTargetVersion": "0.17.1"
+      },
+      {
+        "directory": "lasso",
+        "packageName": "lasso",
+        "packageVersion": "3.3.1",
+        "gitCommit": "1f4484bdf71ceb909f6433f9d9dd109324fb0c92",
+        "testCommand": "node scripts/run-tests.js",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^0.16.2"
+        },
+        "installedTargetVersion": "0.17.1"
+      },
+      {
+        "directory": "node-restify",
+        "packageName": "restify",
+        "packageVersion": "8.5.1",
+        "gitCommit": "9153587c023a876237c1d8bc7491fee4984d9074",
+        "testCommand": "make prepush",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^0.17.1"
+        },
+        "installedTargetVersion": "0.17.1"
+      },
+      {
+        "directory": "serve-static",
+        "packageName": "serve-static",
+        "packageVersion": "1.14.1",
+        "gitCommit": "94feedb81682f4503ed9f8dc6d51a5c1b9bfa091",
+        "testCommand": "mocha --reporter spec --bail --check-leaks test/",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "0.17.1"
+        },
+        "installedTargetVersion": "0.17.1"
+      }
+    ],
+    "serve-static": [
+      {
+        "directory": "connect-gzip-static",
+        "packageName": "connect-gzip-static",
+        "packageVersion": "2.1.1",
+        "gitCommit": "907ae4791fd40461f6e2eed798a4d7091a39241b",
+        "testCommand": "make lint test",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "~1"
+        },
+        "installedTargetVersion": "1.14.1"
+      },
+      {
+        "directory": "gulp-connect",
+        "packageName": "gulp-connect",
+        "packageVersion": "5.7.0",
+        "gitCommit": "d306eb32c362189e24d2927da712abd589796e42",
+        "testCommand": "mocha",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.13.2"
+        },
+        "installedTargetVersion": "1.14.1"
+      },
+      {
+        "directory": "moleculer-web",
+        "packageName": "moleculer-web",
+        "packageVersion": "0.10.0-beta1",
+        "gitCommit": "f4669daaede6ec55e29e32bd6f32c957e58614e9",
+        "testCommand": "jest --coverage --forceExit",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.14.1"
+        },
+        "installedTargetVersion": "1.14.1"
+      },
+      {
+        "directory": "node-soap",
+        "packageName": "soap",
+        "packageVersion": "0.32.0",
+        "gitCommit": "1f58e6ea98d789da69445204d6df90806effa0c1",
+        "testCommand": "mocha --timeout 15000 --bail --exit test/*-test.js test/security/*.js",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "^1.11.1"
+        },
+        "installedTargetVersion": "1.14.1"
+      },
+      {
+        "directory": "reload",
+        "packageName": "reload",
+        "packageVersion": "3.1.0",
+        "gitCommit": "c0271a6d7f3a841763f63d68e659bce4ba46c29e",
+        "testCommand": "npm run standard && npm run unitTests",
+        "declaredDependency": {
+          "field": "dependencies",
+          "range": "~1.14.0"
+        },
+        "installedTargetVersion": "1.14.1"
+      }
+    ]
+  }
+}

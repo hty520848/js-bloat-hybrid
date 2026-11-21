@@ -1,0 +1,20 @@
+{
+  "frozenAtUtc": "2026-10-27T06:21:25Z",
+  "criterionVersion": "C1-v1+C1a-20261027",
+  "rowIdSeed": 20261027,
+  "frozen": [
+    "verdicts-A1-blinded.csv",
+    "row-map.json"
+  ],
+  "generated": [
+    "verdicts-C1aYES.csv",
+    "verdicts-C1aNO.csv"
+  ],
+  "sha256": {
+    "verdicts-A1-blinded.csv": "8c3ae727885adbea6d663907a5e4d3831571a62bf5740a39c8f91096d13c0c0b",
+    "verdicts-C1aNO.csv": "5a87e48945252ca39465e930b8ec564f8af6db44d27e0caeeeb6af7f1138b8dd",
+    "verdicts-C1aYES.csv": "1c7ad188f5ec2129ab964c2df8673fd7f719061009a1742d4997e8680d8e2062",
+    "row-map.json": "e88e369a97ef62435f20618819bc3bfa0dabb4d4ec1389157620233ade80b04e"
+  },
+  "rule": "冻结文件写入后不得再改；如需更正，必须新建文件名并另记 FREEZE 记录，不得覆盖"
+}

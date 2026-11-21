@@ -1,0 +1,1317 @@
+{
+  "nodeTest": "{INPUTS}/runtimes/node-test/bin/node",
+  "nodeStatic": "{INPUTS}/runtimes/node-static/bin/node",
+  "graalNode": "{INPUTS}/runtimes/graal/bin/node",
+  "nodeprofLoader": "{INPUTS}/runtimes/graal/nodeprof/nodeprof.js",
+  "nodeprofJar": "{INPUTS}/runtimes/graal/jre/tools/nodeprof/nodeprof.jar",
+  "staticNodeModules": "{INPUTS}/tools/static/node_modules",
+  "transformerNodeModules": "{INPUTS}/tools/transformer/node_modules",
+  "targets": {
+    "morgan": {
+      "root": "{INPUTS}/targets/morgan",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks"
+      ],
+      "dependencyLockSha256": "b33a4334895414c2fa6d5703f471e9728b09dfac5269671622294883242328d7",
+      "harnessOrigin": "Archived complete core assertions, absent files copied only; source qualification is redone by prepare.",
+      "harnessProviders": [
+        {
+          "name": "mocha",
+          "version": "7.1.1",
+          "path": "data/artifact/stubbifier/Experiments/Clients/memory-fs/mochapack/node_modules/mocha"
+        },
+        {
+          "name": "supertest",
+          "version": "4.0.2",
+          "path": "data/artifact/stubbifier/Experiments/Clients/body-parser/karma/node_modules/supertest"
+        },
+        {
+          "name": "split",
+          "version": "1.0.1",
+          "path": "data/artifact/stubbifier/Experiments/Clients/body-parser/karma/node_modules/split"
+        }
+      ]
+    },
+    "prop-types": {
+      "root": "{INPUTS}/targets/prop-types",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/jest/bin/jest.js",
+        "--runInBand"
+      ],
+      "dependencyLockSha256": "d8869cc36672227a57f1443c4dad0b6c0e5c53c529a129a4c774430f92fbce26",
+      "preparationEvidence": "{PACKAGE}/artifacts/matching-upstream-tests-005/status.json"
+    },
+    "redux": {
+      "root": "{INPUTS}/targets/redux",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/jest/bin/jest.js",
+        "--runInBand"
+      ],
+      "dependencyLockSha256": "5ebbbb39ae641ad37ab2ff39993ce7bf8f3fd8935e4d2d2582549a85043c86bf",
+      "preparationEvidence": "{PACKAGE}/artifacts/matching-upstream-tests-005/status.json"
+    },
+    "send": {
+      "root": "{INPUTS}/targets/send",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks"
+      ],
+      "dependencyLockSha256": "c2b728b3ce5554906f5076c7cff65c04d496e4fa7e85f8c37103a4185eed951e",
+      "harnessOrigin": "Archived complete core assertions, absent files copied only; source qualification is redone by prepare.",
+      "harnessProviders": [
+        {
+          "name": "mocha",
+          "version": "7.1.1",
+          "path": "data/artifact/stubbifier/Experiments/Clients/memory-fs/mochapack/node_modules/mocha"
+        },
+        {
+          "name": "supertest",
+          "version": "4.0.2",
+          "path": "data/artifact/stubbifier/Experiments/Clients/body-parser/karma/node_modules/supertest"
+        },
+        {
+          "name": "after",
+          "version": "0.8.2",
+          "path": "data/artifact/stubbifier/Experiments/Clients/body-parser/karma/node_modules/after"
+        }
+      ]
+    },
+    "body-parser": {
+      "root": "{INPUTS}/targets/body-parser",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks",
+        "--require",
+        "test/support/env",
+        "test/"
+      ],
+      "dependencyLockSha256": "817383dcb1ca7e769c05276b27696095e489148b625530f771943099c6d8bd55",
+      "preparationEvidence": "{PACKAGE}/artifacts/body-harness-009/status.json"
+    },
+    "compression": {
+      "root": "{INPUTS}/targets/compression",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks"
+      ],
+      "dependencyLockSha256": "58ea75c58ccf904851aba1bc9a486e5066a40771aaa1fb48dd5cfcd2f6c4cf57",
+      "preparationEvidence": "{PACKAGE}/artifacts/complete-mocha-008/status.json"
+    },
+    "memory-fs": {
+      "root": "{INPUTS}/targets/memory-fs",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks"
+      ],
+      "dependencyLockSha256": "3ddf867c352002f369d1838876e95b86f081d84cb87c5a25574d912c2ce4cd43",
+      "preparationEvidence": "{PACKAGE}/artifacts/remaining-mocha-004/status.json"
+    },
+    "serve-static": {
+      "root": "{INPUTS}/targets/serve-static",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/mocha/bin/_mocha",
+        "--reporter",
+        "spec",
+        "--bail",
+        "--check-leaks"
+      ],
+      "dependencyLockSha256": "16ce4bf1786742389c859a03e8dc6a58db436bd5015463cd66cd45848311935f",
+      "preparationEvidence": "{PACKAGE}/artifacts/remaining-mocha-004/status.json"
+    },
+    "memfs": {
+      "root": "{INPUTS}/targets/memfs",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/jest/bin/jest.js",
+        "--runInBand",
+        "--resolver={PACKAGE}/src/metrics/compiled_source_resolver.js"
+      ],
+      "dependencyLockSha256": "be0923aa3be91dffb6b00689c20adac1bb59fee2bd6f34bf71bdd227a6172404",
+      "preparationEvidence": "{PACKAGE}/artifacts/remaining-targets-003/status.json"
+    },
+    "css-loader": {
+      "root": "{INPUTS}/targets/css-loader",
+      "command": [
+        "{INPUTS}/runtimes/node-test/bin/node",
+        "node_modules/jest/bin/jest.js",
+        "--runInBand"
+      ],
+      "dependencyLockSha256": "a0c559059ef44097a9b32e2530214104b7da66c7c6746636f2e4ee45f13a5636",
+      "unitEvidenceRun": "css-readiness-20261025-007"
+    }
+  },
+  "clients": {
+    "body-parser": [
+      {
+        "directory": "express",
+        "root": "{INPUTS}/clients/body-parser/express",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/body-parser"
+        ],
+        "targetBindingGroups": {
+          "node_modules/body-parser": "698d0be4d7a1155f414c"
+        },
+        "inputManifestSha256": "763dbfacd5969fae52e60a851c52601621a37a1c115917ac7e4897f706617cb7",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "4.17.1",
+        "gitCommit": "5596222f6a6e0eea74f6fb38915b071d98122a2f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-express.json",
+        "sourceManifest": "{INPUTS}/client-manifests/body-parser/express.json",
+        "library": "body-parser",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-express-source-sha256.json"
+      },
+      {
+        "directory": "moleculer-web",
+        "root": "{INPUTS}/clients/body-parser/moleculer-web",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/body-parser"
+        ],
+        "targetBindingGroups": {
+          "node_modules/body-parser": "698d0be4d7a1155f414c"
+        },
+        "inputManifestSha256": "0f24919c7900399e5241010840477187c32acf479d094cb4c3517750eee3a11b",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.10.0-beta1",
+        "gitCommit": "f4669daaede6ec55e29e32bd6f32c957e58614e9",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-moleculer-web.json",
+        "sourceManifest": "{INPUTS}/client-manifests/body-parser/moleculer-web.json",
+        "library": "body-parser",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-moleculer-web-source-sha256.json"
+      },
+      {
+        "directory": "typescript-rest",
+        "root": "{INPUTS}/clients/body-parser/typescript-rest",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/body-parser"
+        ],
+        "targetBindingGroups": {
+          "node_modules/body-parser": "698d0be4d7a1155f414c"
+        },
+        "inputManifestSha256": "a00d417a0b0b501f7e4a0cfc5456e02d39dcb43fdc6e60255d5a00c3da5b1a14",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.0.2",
+        "gitCommit": "bc1491d694bc60dda5b8a2bda31f5f49a729aa93",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-typescript-rest.json",
+        "sourceManifest": "{INPUTS}/client-manifests/body-parser/typescript-rest.json",
+        "library": "body-parser",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-typescript-rest-source-sha256.json"
+      },
+      {
+        "directory": "appium-base-driver",
+        "root": "{INPUTS}/clients/body-parser/appium-base-driver",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/body-parser"
+        ],
+        "targetBindingGroups": {
+          "node_modules/body-parser": "698d0be4d7a1155f414c"
+        },
+        "inputManifestSha256": "e9914623ae5daf5e2e268e8d8e5d07f803a2d99ad4e63557b8107c0a47b00794",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "7.0.1",
+        "gitCommit": "9c03983660e14c9866bdfdf79034314051719769",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-appium-base-driver.json",
+        "sourceManifest": "{INPUTS}/client-manifests/body-parser/appium-base-driver.json",
+        "library": "body-parser",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-appium-base-driver-source-sha256.json"
+      },
+      {
+        "directory": "karma",
+        "root": "{INPUTS}/clients/body-parser/karma",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/body-parser"
+        ],
+        "targetBindingGroups": {
+          "node_modules/body-parser": "698d0be4d7a1155f414c"
+        },
+        "inputManifestSha256": "5d4ffd9fc5fee96a06563fa362a4f03b87fbc6325048366a14f2d84bd24d65ef",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "5.1.1",
+        "gitCommit": "cbdd9da2d39b79315884bc5a516a0407fb9051c3",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-karma.json",
+        "sourceManifest": "{INPUTS}/client-manifests/body-parser/karma.json",
+        "library": "body-parser",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/body-parser-karma-source-sha256.json"
+      }
+    ],
+    "compression": [
+      {
+        "directory": "cordova-serve",
+        "root": "{INPUTS}/clients/compression/cordova-serve",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/compression"
+        ],
+        "targetBindingGroups": {
+          "node_modules/compression": "666e2d75348bf46acab8"
+        },
+        "inputManifestSha256": "ff2c494d242149f5b31e13afb4140e4df5ec61d1b8f8a83ca933ee353531cce9",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "4.0.1-dev",
+        "gitCommit": "48807c47a9727be5f5c32e50545eb7f4a26ad6c1",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-cordova-serve.json",
+        "sourceManifest": "{INPUTS}/client-manifests/compression/cordova-serve.json",
+        "library": "compression",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-cordova-serve-source-sha256.json"
+      },
+      {
+        "directory": "hexo-server",
+        "root": "{INPUTS}/clients/compression/hexo-server",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/compression"
+        ],
+        "targetBindingGroups": {
+          "node_modules/compression": "666e2d75348bf46acab8"
+        },
+        "inputManifestSha256": "4a1dfc03c11ee3846c9f0e17cb2f969bd5827e1578da38ce9a05e9c79b784ba8",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "2.0.0",
+        "gitCommit": "569346949ca1aced78f9a957921dfa6b2f90cb2e",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-hexo-server.json",
+        "sourceManifest": "{INPUTS}/client-manifests/compression/hexo-server.json",
+        "library": "compression",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-hexo-server-source-sha256.json"
+      },
+      {
+        "directory": "ember-cli",
+        "root": "{INPUTS}/clients/compression/ember-cli",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/compression"
+        ],
+        "targetBindingGroups": {
+          "node_modules/compression": "1d5bea116ec1962c2d2d"
+        },
+        "inputManifestSha256": "f572667a2fe7e8b813d278aeaafeb01a1e6a996f0ea4d0c51f098ebb91df846a",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.21.0-beta.1",
+        "gitCommit": "fa03d0ad4bb05e1b273681f342c138bdf2088a0f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-ember-cli.json",
+        "sourceManifest": "{INPUTS}/client-manifests/compression/ember-cli.json",
+        "library": "compression",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-ember-cli-source-sha256.json"
+      },
+      {
+        "directory": "koop-core",
+        "root": "{INPUTS}/clients/compression/koop-core",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/compression"
+        ],
+        "targetBindingGroups": {
+          "node_modules/compression": "666e2d75348bf46acab8"
+        },
+        "inputManifestSha256": "14828b4351d09b7c287083254ad4156d1e5a85ffe7fb53b6d375f621af39c2eb",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "4.0.1",
+        "gitCommit": "f60422eb04b17cb4eb91b0c840044cdf99576e4f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-koop-core.json",
+        "sourceManifest": "{INPUTS}/client-manifests/compression/koop-core.json",
+        "library": "compression",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-koop-core-source-sha256.json"
+      },
+      {
+        "directory": "server",
+        "root": "{INPUTS}/clients/compression/server",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/compression"
+        ],
+        "targetBindingGroups": {
+          "node_modules/compression": "666e2d75348bf46acab8"
+        },
+        "inputManifestSha256": "259ddf89ef9fbce2082e9bc1777968b2e4126705c5e689646533eb5f9e1df5a0",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "1.0.30",
+        "gitCommit": "a6fd40e770d08aaa6b9e54ed459efe31130b9477",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-server.json",
+        "sourceManifest": "{INPUTS}/client-manifests/compression/server.json",
+        "library": "compression",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/compression-server-source-sha256.json"
+      }
+    ],
+    "css-loader": [
+      {
+        "directory": "PowerBI-visuals-tools",
+        "root": "{INPUTS}/clients/css-loader/PowerBI-visuals-tools",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/css-loader"
+        ],
+        "targetBindingGroups": {
+          "node_modules/css-loader": "9873ded1ba53e31f5a5a"
+        },
+        "inputManifestSha256": "3672e7fc836b16d69d690928cb70f72af6522130d566ba85a7ce86daca8917bb",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.1.15",
+        "gitCommit": "aa7f15f1bab7afd2c611f0a0edf8902c0f4e1f80",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-PowerBI-visuals-tools.json",
+        "sourceManifest": "{INPUTS}/client-manifests/css-loader/PowerBI-visuals-tools.json",
+        "library": "css-loader",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-PowerBI-visuals-tools-source-sha256.json"
+      },
+      {
+        "directory": "custom-react-scripts",
+        "root": "{INPUTS}/clients/css-loader/custom-react-scripts",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/css-loader"
+        ],
+        "targetBindingGroups": {
+          "node_modules/css-loader": "9873ded1ba53e31f5a5a"
+        },
+        "inputManifestSha256": "f577ab68829fb87dd924816bd197e2ed5ff4780e53ceda6d9927feb7a5f0293f",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": null,
+        "gitCommit": "3a8d74048cf8cbe1ede0689762c198126a9db2d6",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-custom-react-scripts.json",
+        "sourceManifest": "{INPUTS}/client-manifests/css-loader/custom-react-scripts.json",
+        "library": "css-loader",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-custom-react-scripts-source-sha256.json"
+      },
+      {
+        "directory": "astroturf",
+        "root": "{INPUTS}/clients/css-loader/astroturf",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/css-loader"
+        ],
+        "targetBindingGroups": {
+          "node_modules/css-loader": "9873ded1ba53e31f5a5a"
+        },
+        "inputManifestSha256": "c8212a06d8e7c2704bcfa522ac17616aacccb5cb8b26bbeee6a27654d5c12265",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.10.4",
+        "gitCommit": "9d0c9c02f211c4c03a17cdcd398126cac4776232",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-astroturf.json",
+        "sourceManifest": "{INPUTS}/client-manifests/css-loader/astroturf.json",
+        "library": "css-loader",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-astroturf-source-sha256.json"
+      },
+      {
+        "directory": "playroom",
+        "root": "{INPUTS}/clients/css-loader/playroom",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/css-loader"
+        ],
+        "targetBindingGroups": {
+          "node_modules/css-loader": "9873ded1ba53e31f5a5a"
+        },
+        "inputManifestSha256": "8b6274c1fd4e76d524bfe9b10bc72d1fa0c31426cc16ad9a63c12aca713e641a",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.0-semantically-released",
+        "gitCommit": "0e38f952a8d261210143f59ee26a64e34b4a1e1a",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-playroom.json",
+        "sourceManifest": "{INPUTS}/client-manifests/css-loader/playroom.json",
+        "library": "css-loader",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-playroom-source-sha256.json"
+      },
+      {
+        "directory": "docusaurus",
+        "root": "{INPUTS}/clients/css-loader/docusaurus",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/css-loader"
+        ],
+        "targetBindingGroups": {
+          "node_modules/css-loader": "9873ded1ba53e31f5a5a"
+        },
+        "inputManifestSha256": "69c1c29fcdeb240722ecc3f66da3033c52242cb41794b2864d74649571ca1d96",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": null,
+        "gitCommit": "f4ca61be81f390457a2dce411786966a4803dec0",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-docusaurus.json",
+        "sourceManifest": "{INPUTS}/client-manifests/css-loader/docusaurus.json",
+        "library": "css-loader",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/css-loader-docusaurus-source-sha256.json"
+      }
+    ],
+    "memfs": [
+      {
+        "directory": "class-component-converter",
+        "root": "{INPUTS}/clients/memfs/class-component-converter",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memfs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memfs": "66128eacd65a39a6d820"
+        },
+        "inputManifestSha256": "6259f1b32fd9a464bae3a148f4f425b7d65712a432c6d0e21ad3b3d9d9940b76",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.1",
+        "gitCommit": "e99b51a23ed818088603b20846c82fea93de9ee3",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-class-component-converter.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memfs/class-component-converter.json",
+        "library": "memfs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-class-component-converter-source-sha256.json"
+      },
+      {
+        "directory": "artgen",
+        "root": "{INPUTS}/clients/memfs/artgen",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memfs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memfs": "66128eacd65a39a6d820"
+        },
+        "inputManifestSha256": "bb7d68b7d4cc28d6bf2ab3317a271a8f1dc44e4bf36a012a87a22b336ee7389a",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.8",
+        "gitCommit": "bda4f65003976b11eb44eafa2a777d3035a65707",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-artgen.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memfs/artgen.json",
+        "library": "memfs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-artgen-source-sha256.json"
+      },
+      {
+        "directory": "jaxom-ts",
+        "root": "{INPUTS}/clients/memfs/jaxom-ts",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memfs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memfs": "66128eacd65a39a6d820"
+        },
+        "inputManifestSha256": "a2757f27484df934a40978b4eb8ffee7ace8dd1127e678898916f6a5da8d46a2",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.18",
+        "gitCommit": "deaf6c43f12a063c0a07ed913e6a520ddbbc3e2b",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-jaxom-ts.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memfs/jaxom-ts.json",
+        "library": "memfs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-jaxom-ts-source-sha256.json"
+      },
+      {
+        "directory": "zenobia-ts",
+        "root": "{INPUTS}/clients/memfs/zenobia-ts",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memfs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memfs": "66128eacd65a39a6d820"
+        },
+        "inputManifestSha256": "7caa5e48468481b3327f8c57beb26d6c01266d52b29da5a9c77983f98cd64ad6",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.2",
+        "gitCommit": "3bc541d3b4ec455e3d61fcf7de9df8e16236e8e1",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-zenobia-ts.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memfs/zenobia-ts.json",
+        "library": "memfs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-zenobia-ts-source-sha256.json"
+      },
+      {
+        "directory": "webpack-dev-middleware",
+        "root": "{INPUTS}/clients/memfs/webpack-dev-middleware",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memfs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memfs": "66128eacd65a39a6d820"
+        },
+        "inputManifestSha256": "7eef322f95fd62d98bc652417b84cbbc2a960f7a18c532d512da005108a616e0",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "4.0.0-rc.3",
+        "gitCommit": "ef3564a31e1268eae24c2ba43df0949e45cdf573",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-webpack-dev-middleware.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memfs/webpack-dev-middleware.json",
+        "library": "memfs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memfs-webpack-dev-middleware-source-sha256.json"
+      }
+    ],
+    "memory-fs": [
+      {
+        "directory": "vue-builder",
+        "root": "{INPUTS}/clients/memory-fs/vue-builder",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memory-fs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memory-fs": "3f09c90ae39e38f35453"
+        },
+        "inputManifestSha256": "efd7777edebf2c3b04e8c6f5f37058e61106a8a3eec57a996815cb3dfdc64aad",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "1.7.2",
+        "gitCommit": "d3b53a2e50e26b0a41774b70da32aa870241b742",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-vue-builder.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memory-fs/vue-builder.json",
+        "library": "memory-fs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-vue-builder-source-sha256.json"
+      },
+      {
+        "directory": "astroturf",
+        "root": "{INPUTS}/clients/memory-fs/astroturf",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memory-fs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memory-fs": "3f09c90ae39e38f35453"
+        },
+        "inputManifestSha256": "7b3bff62c108d00073569cf10ececf956eabd9583a86c91b6c4afac23ca75071",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.10.4",
+        "gitCommit": "9d0c9c02f211c4c03a17cdcd398126cac4776232",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-astroturf.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memory-fs/astroturf.json",
+        "library": "memory-fs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-astroturf-source-sha256.json"
+      },
+      {
+        "directory": "mochapack",
+        "root": "{INPUTS}/clients/memory-fs/mochapack",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/enhanced-resolve/node_modules/memory-fs",
+          "node_modules/memory-fs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/enhanced-resolve/node_modules/memory-fs": "3f09c90ae39e38f35453",
+          "node_modules/memory-fs": "3f09c90ae39e38f35453"
+        },
+        "inputManifestSha256": "e7e5a21300d5fa27b004b87a5fc1e1b008f057946780418ee85290a3a23610b2",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "2.0.3",
+        "gitCommit": "556836c27e8e5e7d49b2feb515ba16c0a7a69620",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-mochapack.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memory-fs/mochapack.json",
+        "library": "memory-fs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-mochapack-source-sha256.json"
+      },
+      {
+        "directory": "rax",
+        "root": "{INPUTS}/clients/memory-fs/rax",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/enhanced-resolve/node_modules/memory-fs",
+          "node_modules/memory-fs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/enhanced-resolve/node_modules/memory-fs": "3f09c90ae39e38f35453",
+          "node_modules/memory-fs": "3f09c90ae39e38f35453"
+        },
+        "inputManifestSha256": "f5577f8f07570ce70c17d106f1cfbcbd68eaed6a068581dedc513f3e759ac920",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": null,
+        "gitCommit": "3c9566f97b932b120eec135aab12987d4bfed5a5",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-rax.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memory-fs/rax.json",
+        "library": "memory-fs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-rax-source-sha256.json"
+      },
+      {
+        "directory": "webpack",
+        "root": "{INPUTS}/clients/memory-fs/webpack",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/memory-fs"
+        ],
+        "targetBindingGroups": {
+          "node_modules/memory-fs": "3f09c90ae39e38f35453"
+        },
+        "inputManifestSha256": "a54a2a5ef1532304c804365c23d3fadaed78563170fc16e073d886dbdc39c072",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "5.0.0-beta.25",
+        "gitCommit": "50172039bd4901a0f83d696ef53d2650b19b34f3",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-webpack.json",
+        "sourceManifest": "{INPUTS}/client-manifests/memory-fs/webpack.json",
+        "library": "memory-fs",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/memory-fs-webpack-source-sha256.json"
+      }
+    ],
+    "morgan": [
+      {
+        "directory": "ember-cli",
+        "root": "{INPUTS}/clients/morgan/ember-cli",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/morgan"
+        ],
+        "targetBindingGroups": {
+          "node_modules/morgan": "dfefdc484d270ebbed0e"
+        },
+        "inputManifestSha256": "4209fd925e1a7febcf0cfcc09d241215f6ddcfec2743f274be33de2e991892c0",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.21.0-beta.1",
+        "gitCommit": "fa03d0ad4bb05e1b273681f342c138bdf2088a0f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-ember-cli.json",
+        "sourceManifest": "{INPUTS}/client-manifests/morgan/ember-cli.json",
+        "library": "morgan",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-ember-cli-source-sha256.json"
+      },
+      {
+        "directory": "appium-base-driver",
+        "root": "{INPUTS}/clients/morgan/appium-base-driver",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/morgan"
+        ],
+        "targetBindingGroups": {
+          "node_modules/morgan": "dfefdc484d270ebbed0e"
+        },
+        "inputManifestSha256": "5370afb76d1f928f200464ca93bffa26080e5756d5a9a1cb3a4a79cbab55a7b2",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "7.1.0",
+        "gitCommit": "ffaf365e7e6e6fd2ef9f34ec963768721e7ed33f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-appium-base-driver.json",
+        "sourceManifest": "{INPUTS}/client-manifests/morgan/appium-base-driver.json",
+        "library": "morgan",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-appium-base-driver-source-sha256.json"
+      },
+      {
+        "directory": "grunt-contrib-connect",
+        "root": "{INPUTS}/clients/morgan/grunt-contrib-connect",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/morgan"
+        ],
+        "targetBindingGroups": {
+          "node_modules/morgan": "dfefdc484d270ebbed0e"
+        },
+        "inputManifestSha256": "b6fe1cfed8f2cbd51c2559e5eecc5a1be5c63a40b8c41ab7e4e587f660edc068",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.0.0",
+        "gitCommit": "5c3d0e7855bba7d60b243188cb5be95874875970",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-grunt-contrib-connect.json",
+        "sourceManifest": "{INPUTS}/client-manifests/morgan/grunt-contrib-connect.json",
+        "library": "morgan",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-grunt-contrib-connect-source-sha256.json"
+      },
+      {
+        "directory": "superstatic",
+        "root": "{INPUTS}/clients/morgan/superstatic",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/morgan"
+        ],
+        "targetBindingGroups": {
+          "node_modules/morgan": "dfefdc484d270ebbed0e"
+        },
+        "inputManifestSha256": "7ad55ee5e50cbc68d18e7044967604f3cfb2c0a17ef1d3bbf12099634839f24c",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "7.0.0",
+        "gitCommit": "ac12a362356982473c27bc056994238c4e523947",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-superstatic.json",
+        "sourceManifest": "{INPUTS}/client-manifests/morgan/superstatic.json",
+        "library": "morgan",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-superstatic-source-sha256.json"
+      },
+      {
+        "directory": "json-server",
+        "root": "{INPUTS}/clients/morgan/json-server",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/morgan"
+        ],
+        "targetBindingGroups": {
+          "node_modules/morgan": "dfefdc484d270ebbed0e"
+        },
+        "inputManifestSha256": "292ded2f73985063e14a480535d18083eafbcbb9efd0836af70fc83bb351c2de",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.16.1",
+        "gitCommit": "b2c391cd587294f88cda6c6006955d3fdaacf5a5",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-json-server.json",
+        "sourceManifest": "{INPUTS}/client-manifests/morgan/json-server.json",
+        "library": "morgan",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/morgan-json-server-source-sha256.json"
+      }
+    ],
+    "prop-types": [
+      {
+        "directory": "react-loadable",
+        "root": "{INPUTS}/clients/prop-types/react-loadable",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/prop-types"
+        ],
+        "targetBindingGroups": {
+          "node_modules/prop-types": "3ac7a13457caa6031052"
+        },
+        "inputManifestSha256": "d7ac0f680ed5847afa54079cab07336234b487b3af0d75ea6e2b2200a0621aae",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "5.5.0",
+        "gitCommit": "6201c5837b212d6244c57f3748f2b1375096beeb",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-loadable.json",
+        "sourceManifest": "{INPUTS}/client-manifests/prop-types/react-loadable.json",
+        "library": "prop-types",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-loadable-source-sha256.json"
+      },
+      {
+        "directory": "react-dates",
+        "root": "{INPUTS}/clients/prop-types/react-dates",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/prop-types"
+        ],
+        "targetBindingGroups": {
+          "node_modules/prop-types": "3ac7a13457caa6031052"
+        },
+        "inputManifestSha256": "42705f256e722753a5a86d8f953950b97efbe61938a36a64a79ed73f4044c47a",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "21.8.0",
+        "gitCommit": "35766d6d17ec36704af0e9ab109a1f84205a9f4e",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-dates.json",
+        "sourceManifest": "{INPUTS}/client-manifests/prop-types/react-dates.json",
+        "library": "prop-types",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-dates-source-sha256.json",
+        "fixedDateMs": 1594769987000,
+        "fixedCalendarSource": {
+          "gitCommit": "35766d6d17ec36704af0e9ab109a1f84205a9f4e",
+          "unixSeconds": 1594769987,
+          "reason": "Upstream DD/MM/YYYY fixture is parsed using US month/day locale; current calendar makes it flaky. Freeze to authenticated client commit timestamp; no assertion edits."
+        }
+      },
+      {
+        "directory": "react-redux",
+        "root": "{INPUTS}/clients/prop-types/react-redux",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/prop-types"
+        ],
+        "targetBindingGroups": {
+          "node_modules/prop-types": "3ac7a13457caa6031052"
+        },
+        "inputManifestSha256": "b11bdb93d6a8a3e9194c869346182ed797ac22dfab89b65b93dbc811bb031bbf",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "7.2.1",
+        "gitCommit": "f0124d71f959224fd1aebc02d50ce0069e58c5e5",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-redux.json",
+        "sourceManifest": "{INPUTS}/client-manifests/prop-types/react-redux.json",
+        "library": "prop-types",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-react-redux-source-sha256.json"
+      },
+      {
+        "directory": "redux-form",
+        "root": "{INPUTS}/clients/prop-types/redux-form",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/prop-types"
+        ],
+        "targetBindingGroups": {
+          "node_modules/prop-types": "3ac7a13457caa6031052"
+        },
+        "inputManifestSha256": "3a45597d2796b4523226310957ec13e2d6f763e2a70ca32d128f051378ca7cec",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "8.3.6",
+        "gitCommit": "b9d2aa4723dd9aa5386e74798d0dc0ce07dde099",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-redux-form.json",
+        "sourceManifest": "{INPUTS}/client-manifests/prop-types/redux-form.json",
+        "library": "prop-types",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-redux-form-source-sha256.json"
+      },
+      {
+        "directory": "downshift",
+        "root": "{INPUTS}/clients/prop-types/downshift",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/prop-types"
+        ],
+        "targetBindingGroups": {
+          "node_modules/prop-types": "3ac7a13457caa6031052"
+        },
+        "inputManifestSha256": "f09d5f2dd8f98312ce782cda36f6b2644404ccd97aab9c41d0eba1eb664d66ba",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.0.0-semantically-released",
+        "gitCommit": "ba0ec8a51f3ee60d52b90122fc3efa7e26532160",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-downshift.json",
+        "sourceManifest": "{INPUTS}/client-manifests/prop-types/downshift.json",
+        "library": "prop-types",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/prop-types-downshift-source-sha256.json"
+      }
+    ],
+    "redux": [
+      {
+        "directory": "Choices",
+        "root": "{INPUTS}/clients/redux/Choices",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/redux"
+        ],
+        "targetBindingGroups": {
+          "node_modules/redux": "f1cfb2228fa87c8a46bf"
+        },
+        "inputManifestSha256": "8debe3b7cdc932ac8e25cbf9bb8f78a450a90f410585da6bb876fe8bdc04049a",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "9.0.1",
+        "gitCommit": "115d88d97033fcc93bdd744f2a3067c1d8a730a6",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-Choices.json",
+        "sourceManifest": "{INPUTS}/client-manifests/redux/Choices.json",
+        "library": "redux",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-Choices-source-sha256.json"
+      },
+      {
+        "directory": "found",
+        "root": "{INPUTS}/clients/redux/found",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/redux"
+        ],
+        "targetBindingGroups": {
+          "node_modules/redux": "f1cfb2228fa87c8a46bf"
+        },
+        "inputManifestSha256": "049414d6161680a9a4f557a48c3cd013e5e6e548787e98b020dd528c244e7570",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.5.9",
+        "gitCommit": "fcd8de2c7a8d48ccea4a877841ccb8a98528b21b",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-found.json",
+        "sourceManifest": "{INPUTS}/client-manifests/redux/found.json",
+        "library": "redux",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-found-source-sha256.json"
+      },
+      {
+        "directory": "redux-ignore",
+        "root": "{INPUTS}/clients/redux/redux-ignore",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/redux"
+        ],
+        "targetBindingGroups": {
+          "node_modules/redux": "f1cfb2228fa87c8a46bf"
+        },
+        "inputManifestSha256": "be7d5690c014d2752bc5128d9f7a0f2eff3493a32b36be93207315e449244cf4",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "1.2.5",
+        "gitCommit": "2f1771606a1eb9d8f8cdce1441c610a512bc45db",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-redux-ignore.json",
+        "sourceManifest": "{INPUTS}/client-manifests/redux/redux-ignore.json",
+        "library": "redux",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-redux-ignore-source-sha256.json"
+      },
+      {
+        "directory": "Griddle",
+        "root": "{INPUTS}/clients/redux/Griddle",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/redux"
+        ],
+        "targetBindingGroups": {
+          "node_modules/redux": "f1cfb2228fa87c8a46bf"
+        },
+        "inputManifestSha256": "98e92d38227371e4c5102d1b61d3ede0ffb5aa6fba86966f738b908b297b2376",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "1.14.0",
+        "gitCommit": "184fc32276274631125b8f0c4e50096f385f7f6a",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-Griddle.json",
+        "sourceManifest": "{INPUTS}/client-manifests/redux/Griddle.json",
+        "library": "redux",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-Griddle-source-sha256.json"
+      },
+      {
+        "directory": "react-beautiful-dnd",
+        "root": "{INPUTS}/clients/redux/react-beautiful-dnd",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/redux"
+        ],
+        "targetBindingGroups": {
+          "node_modules/redux": "f1cfb2228fa87c8a46bf"
+        },
+        "inputManifestSha256": "eb691ad7d98c618bfaff0c01231863b294d748993c7457dea68ebee0c592facd",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "13.0.0",
+        "gitCommit": "ec06fa266e1617cab2402e0613b36d88b9547f7f",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-react-beautiful-dnd.json",
+        "sourceManifest": "{INPUTS}/client-manifests/redux/react-beautiful-dnd.json",
+        "library": "redux",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/redux-react-beautiful-dnd-source-sha256.json"
+      }
+    ],
+    "send": [
+      {
+        "directory": "connect-gzip-static",
+        "root": "{INPUTS}/clients/send/connect-gzip-static",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/send"
+        ],
+        "targetBindingGroups": {
+          "node_modules/send": "6f272a5e0d0e679af6f0"
+        },
+        "inputManifestSha256": "fe9c7c335bd829f8bb415577b8fd2f67d5165faebe30e5c06d9366b56dee6125",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "2.1.1",
+        "gitCommit": "907ae4791fd40461f6e2eed798a4d7091a39241b",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-connect-gzip-static.json",
+        "sourceManifest": "{INPUTS}/client-manifests/send/connect-gzip-static.json",
+        "library": "send",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-connect-gzip-static-source-sha256.json"
+      },
+      {
+        "directory": "lasso",
+        "root": "{INPUTS}/clients/send/lasso",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/send"
+        ],
+        "targetBindingGroups": {
+          "node_modules/send": "6f272a5e0d0e679af6f0"
+        },
+        "inputManifestSha256": "6904d963c17f0ea2e063e306d6058773bb906c9e9f6879c317ad8cb7f4e0af44",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.3.1",
+        "gitCommit": "1f4484bdf71ceb909f6433f9d9dd109324fb0c92",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-lasso.json",
+        "sourceManifest": "{INPUTS}/client-manifests/send/lasso.json",
+        "library": "send",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-lasso-source-sha256.json"
+      },
+      {
+        "directory": "gitbook",
+        "root": "{INPUTS}/clients/send/gitbook",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/send"
+        ],
+        "targetBindingGroups": {
+          "node_modules/send": "6f272a5e0d0e679af6f0"
+        },
+        "inputManifestSha256": "3d473989d8af74b89ee7c63693ead97783ffcde194b785dfc8855866556b9bca",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.2.3",
+        "gitCommit": "6c6ef7f4af32a2977e44dd23d3feb6ebf28970f4",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-gitbook.json",
+        "sourceManifest": "{INPUTS}/client-manifests/send/gitbook.json",
+        "library": "send",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-gitbook-source-sha256.json"
+      },
+      {
+        "directory": "serve-static",
+        "root": "{INPUTS}/clients/send/serve-static",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/send"
+        ],
+        "targetBindingGroups": {
+          "node_modules/send": "6f272a5e0d0e679af6f0"
+        },
+        "inputManifestSha256": "f2b390db9974b9b7a39e045e0b4110284524f88b89f729fba80b32df2d580f34",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "1.14.1",
+        "gitCommit": "94feedb81682f4503ed9f8dc6d51a5c1b9bfa091",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-serve-static.json",
+        "sourceManifest": "{INPUTS}/client-manifests/send/serve-static.json",
+        "library": "send",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-serve-static-source-sha256.json"
+      },
+      {
+        "directory": "node-restify",
+        "root": "{INPUTS}/clients/send/node-restify",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/send"
+        ],
+        "targetBindingGroups": {
+          "node_modules/send": "6f272a5e0d0e679af6f0"
+        },
+        "inputManifestSha256": "0b4cc3cec0b5fd94fbf32a6322164a53707977e690742d26333c50a2b9f52047",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "8.5.1",
+        "gitCommit": "9153587c023a876237c1d8bc7491fee4984d9074",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-node-restify.json",
+        "sourceManifest": "{INPUTS}/client-manifests/send/node-restify.json",
+        "library": "send",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/send-node-restify-source-sha256.json"
+      }
+    ],
+    "serve-static": [
+      {
+        "directory": "connect-gzip-static",
+        "root": "{INPUTS}/clients/serve-static/connect-gzip-static",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/serve-static"
+        ],
+        "targetBindingGroups": {
+          "node_modules/serve-static": "a923724c207d75cbc90f"
+        },
+        "inputManifestSha256": "f51185a4a0a456867843a17226aa5597e88545b1b782a07b4780210ff282b19e",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "2.1.1",
+        "gitCommit": "907ae4791fd40461f6e2eed798a4d7091a39241b",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-connect-gzip-static.json",
+        "sourceManifest": "{INPUTS}/client-manifests/serve-static/connect-gzip-static.json",
+        "library": "serve-static",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-connect-gzip-static-source-sha256.json"
+      },
+      {
+        "directory": "gulp-connect",
+        "root": "{INPUTS}/clients/serve-static/gulp-connect",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/serve-static"
+        ],
+        "targetBindingGroups": {
+          "node_modules/serve-static": "a923724c207d75cbc90f"
+        },
+        "inputManifestSha256": "7465b8e34d7e2fd2b6fed167175d47cb303a6302434fa28789a0badf94a67cea",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "5.7.0",
+        "gitCommit": "d306eb32c362189e24d2927da712abd589796e42",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-gulp-connect.json",
+        "sourceManifest": "{INPUTS}/client-manifests/serve-static/gulp-connect.json",
+        "library": "serve-static",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-gulp-connect-source-sha256.json"
+      },
+      {
+        "directory": "node-soap",
+        "root": "{INPUTS}/clients/serve-static/node-soap",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/serve-static"
+        ],
+        "targetBindingGroups": {
+          "node_modules/serve-static": "a923724c207d75cbc90f"
+        },
+        "inputManifestSha256": "2ba5efe54205d288fc0dccc277d09fd494f8f104363a6df02fd76ebdc6f45afe",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.32.0",
+        "gitCommit": "1f58e6ea98d789da69445204d6df90806effa0c1",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-node-soap.json",
+        "sourceManifest": "{INPUTS}/client-manifests/serve-static/node-soap.json",
+        "library": "serve-static",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-node-soap-source-sha256.json"
+      },
+      {
+        "directory": "moleculer-web",
+        "root": "{INPUTS}/clients/serve-static/moleculer-web",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/serve-static"
+        ],
+        "targetBindingGroups": {
+          "node_modules/serve-static": "a923724c207d75cbc90f"
+        },
+        "inputManifestSha256": "84689df197cea0218e09a8678a2012ce29547e5efb51af46e2a2cb8c4e5c9237",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "0.10.0-beta1",
+        "gitCommit": "f4669daaede6ec55e29e32bd6f32c957e58614e9",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-moleculer-web.json",
+        "sourceManifest": "{INPUTS}/client-manifests/serve-static/moleculer-web.json",
+        "library": "serve-static",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-moleculer-web-source-sha256.json"
+      },
+      {
+        "directory": "reload",
+        "root": "{INPUTS}/clients/serve-static/reload",
+        "command": [
+          "npm",
+          "test"
+        ],
+        "targetBindings": [
+          "node_modules/express/node_modules/serve-static",
+          "node_modules/serve-static"
+        ],
+        "targetBindingGroups": {
+          "node_modules/express/node_modules/serve-static": "a923724c207d75cbc90f",
+          "node_modules/serve-static": "a923724c207d75cbc90f"
+        },
+        "inputManifestSha256": "c7190463260588ffbf991fd4b1a77d07554cf61305c34d05bcc4d9bd4ff1e137",
+        "inputManifestAlgorithm": "all-files-and-internal-links-v1",
+        "packageVersion": "3.1.0",
+        "gitCommit": "c0271a6d7f3a841763f63d68e659bce4ba46c29e",
+        "preparationPlan": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-reload.json",
+        "sourceManifest": "{INPUTS}/client-manifests/serve-static/reload.json",
+        "library": "serve-static",
+        "previousSourceManifest": "{PACKAGE}/artifacts/revision-20261025b/client-plans-001/serve-static-reload-source-sha256.json"
+      }
+    ]
+  },
+  "harnessRoot": "{INPUTS}/harness",
+  "packageManagerBin": "{INPUTS}/harness/environment/package-managers/bin",
+  "externalBaselines": {
+    "mininode": {
+      "root": "{INPUTS}/external/mininode/source",
+      "manifest": "{INPUTS}/external/mininode/source-sha256.json",
+      "archiveSha256": "72c82d087b66da6c35a5516447013ed369c4231eb92d2f73d2e5d5cb0047d52b",
+      "commit": "45ee3e953996e8a428bab5edbf3c24a60d47a574"
+    },
+    "DepPrune": {
+      "root": "{INPUTS}/external/DepPrune/source",
+      "manifest": "{INPUTS}/external/DepPrune/source-sha256.json",
+      "archiveSha256": "976311802074fc42cdbeb4058552bbf0002dff7e46bdaac038d72989c43d63af",
+      "commit": "bcd4eb567bdf732844d99e184dcc35fb3442f6ad"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# The artifact scripts use the Python 3.6+ standard library.
+# Runtime and npm dependencies are pinned in provenance/frozen-toolchain.json
+# and delivered as the exact archives identified in manifest/inputs.json.
+# Follow README.md to stage and import the Linux x86-64 inputs.

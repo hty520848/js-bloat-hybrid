@@ -1,0 +1,29 @@
+\begin{table}[!htbp]
+\centering
+\caption{Code transformation and total offline preparation time by method (s, mean $\pm$ SD)}
+\label{tab:time}
+\small
+\setlength{\tabcolsep}{4.0pt}
+\renewcommand{\arraystretch}{1.05}
+\newcommand{\timingcell}[2]{\makecell[r]{#1\\[-1pt]{\scriptsize\(\pm #2\)}}}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrr@{}}
+\toprule
+& \multicolumn{3}{c}{\textbf{Code transformation}} & \multicolumn{3}{c}{Total preparation} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+Library & SSCG & SDCG & Hybrid & SSCG & SDCG & Hybrid \\
+\midrule
+body-parser & \timingcell{2.37}{0.07} & \timingcell{2.47}{0.39} & \timingcell{3.07}{0.31} & \timingcell{186.54}{2.90} & \timingcell{6.38}{0.70} & \timingcell{22.44}{3.47} \\
+compression & \timingcell{1.15}{0.03} & \timingcell{1.02}{0.02} & \timingcell{1.50}{0.44} & \timingcell{181.26}{2.36} & \timingcell{2.78}{0.19} & \timingcell{12.97}{0.74} \\
+css-loader & \timingcell{10.54}{0.09} & \timingcell{9.84}{0.16} & \timingcell{21.91}{0.20} & \timingcell{1{,}900.24}{15.58} & \timingcell{57.95}{1.68} & \timingcell{320.97}{9.04} \\
+memfs & \timingcell{1.54}{0.04} & \timingcell{1.46}{0.04} & \timingcell{1.86}{0.04} & \timingcell{2{,}781.61}{134.30} & \timingcell{12.26}{0.19} & \timingcell{88.19}{5.12} \\
+memory-fs & \timingcell{1.57}{0.07} & \timingcell{1.35}{0.06} & \timingcell{1.75}{0.08} & \timingcell{124.62}{2.25} & \timingcell{3.12}{0.12} & \timingcell{11.31}{0.29} \\
+morgan & \timingcell{1.14}{0.04} & \timingcell{0.93}{0.08} & \timingcell{1.32}{0.21} & \timingcell{184.35}{2.62} & \timingcell{4.01}{0.12} & \timingcell{14.90}{0.37} \\
+prop-types & \timingcell{1.12}{0.03} & \timingcell{1.17}{0.16} & \timingcell{1.14}{0.02} & \timingcell{395.56}{3.53} & \timingcell{7.93}{0.18} & \timingcell{50.28}{2.64} \\
+redux & \timingcell{1.29}{0.03} & \timingcell{1.18}{0.02} & \timingcell{1.17}{0.03} & \timingcell{2{,}754.89}{74.64} & \timingcell{54.01}{0.54} & \timingcell{593.51}{29.79} \\
+send & \timingcell{1.54}{0.04} & \timingcell{1.24}{0.08} & \timingcell{1.67}{0.20} & \timingcell{186.70}{3.51} & \timingcell{3.52}{0.19} & \timingcell{16.37}{0.30} \\
+serve-static & \timingcell{1.63}{0.07} & \timingcell{1.27}{0.17} & \timingcell{1.84}{0.20} & \timingcell{191.33}{3.90} & \timingcell{3.46}{0.31} & \timingcell{16.32}{0.42} \\
+\midrule
+\textbf{Mean} & \textbf{2.39} & \textbf{2.19} & \textbf{3.72} & \textbf{888.71} & \textbf{15.54} & \textbf{114.73} \\
+\bottomrule
+\end{tabular*}
+\end{table}

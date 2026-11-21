@@ -1,0 +1,237 @@
+{
+  "purpose": "盲标工作表 <-> 工具格式的机械展开映射；PI 侧持有，不发给标注者（§7.2）",
+  "criterionVersion": "C1-v1+C1a-20261027",
+  "rowIdSeed": 20261027,
+  "queuePath": "js-bloat-hybrid/runs/qualification-20261025-003/rq1/adjudication-queue.json",
+  "queueRows": 19,
+  "distinctEdges": 9,
+  "note": "同一 (file, edge) 的所有 arm 复制同一判定；C1 只依赖源码字节，与 arm 无关（§7.2 第 2 步）",
+  "edges": [
+    {
+      "row_id": "r01",
+      "file": "string-tagcloud.js",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:235:18",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r02",
+      "file": "string-tagcloud.js",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:231:1",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5",
+      "arms": [
+        "full",
+        "no-index",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r03",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:352:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r04",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:362:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r05",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:368:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r06",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:282:1->crypto-aes.js:283:37",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r07",
+      "file": "string-tagcloud.js",
+      "edge": "string-tagcloud.js:208:26->string-tagcloud.js:211:62",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r08",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:278:1->crypto-aes.js:279:49",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    },
+    {
+      "row_id": "r09",
+      "file": "crypto-aes.js",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:346:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365",
+      "arms": [
+        "full",
+        "no-module-filter"
+      ]
+    }
+  ],
+  "expansion": [
+    {
+      "row_id": "r08",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:278:1->crypto-aes.js:279:49",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r08",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:278:1->crypto-aes.js:279:49",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r06",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:282:1->crypto-aes.js:283:37",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r06",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:282:1->crypto-aes.js:283:37",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r09",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:346:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r09",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:346:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r03",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:352:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r03",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:343:1->crypto-aes.js:352:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r04",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:362:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r04",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:362:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r05",
+      "file": "crypto-aes.js",
+      "arm": "full",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:368:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r05",
+      "file": "crypto-aes.js",
+      "arm": "no-module-filter",
+      "edge": "crypto-aes.js:359:1->crypto-aes.js:368:7",
+      "sourceSha256": "7151c362dd1d10ec6bf8bd332a57bf96aa3d6bf64a87695b7b670af09e430365"
+    },
+    {
+      "row_id": "r07",
+      "file": "string-tagcloud.js",
+      "arm": "full",
+      "edge": "string-tagcloud.js:208:26->string-tagcloud.js:211:62",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r07",
+      "file": "string-tagcloud.js",
+      "arm": "no-module-filter",
+      "edge": "string-tagcloud.js:208:26->string-tagcloud.js:211:62",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r02",
+      "file": "string-tagcloud.js",
+      "arm": "full",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:231:1",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r02",
+      "file": "string-tagcloud.js",
+      "arm": "no-index",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:231:1",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r02",
+      "file": "string-tagcloud.js",
+      "arm": "no-module-filter",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:231:1",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r01",
+      "file": "string-tagcloud.js",
+      "arm": "full",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:235:18",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    },
+    {
+      "row_id": "r01",
+      "file": "string-tagcloud.js",
+      "arm": "no-module-filter",
+      "edge": "string-tagcloud.js:231:1->string-tagcloud.js:235:18",
+      "sourceSha256": "9634886bcb846c76141f97b681b33a11df444901e0b4c899d8f72a3b6544f9d5"
+    }
+  ]
+}

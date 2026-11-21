@@ -1,0 +1,519 @@
+
+const babel = require("@babel/types");
+const path = require('path')
+const fs = require('fs')
+const parser = require('@babel/parser');
+// const readlines = require('n-readlines');
+const generate = require('@babel/generator').default;
+const traverse = require("@babel/traverse").default;
+// 文件路径或位置信息的格式化
+
+function adjustLOC(locAsString )  {
+  let adjustedLOC = locAsString.substring(4, locAsString.length - 1);
+  let firstIndex = adjustedLOC.indexOf(":<") + ":<".length;
+  let secondIndex = adjustedLOC.indexOf(">--<");
+  let firstRowCol = adjustedLOC.substring(firstIndex, secondIndex).split(',');
+  firstRowCol[1] = String(Number(firstRowCol[1]) - 1);
+  adjustedLOC = adjustedLOC.substring(0, firstIndex) + firstRowCol[0] + ',' + firstRowCol[1] +
+                adjustedLOC.substring(secondIndex);
+
+  return adjustedLOC;
+}
+
+ function staticgetFromACG(filepath) {
+  let unprocessedCG  = fs.readFileSync(path.join(__dirname,filepath), 'utf-8').split(/\r?\n/);
+
+  /* remove header */
+  unprocessedCG.shift();
+ 
+  let targets  = unprocessedCG.map((line) => {
+      line = line.substr(1, line.length - 2);
+      let target = line.split('\",\"')[1];
+
+      if (!target || target.substr(0, 3) != 'Fun') {
+          return "";
+      }
+
+      return adjustLOC(target);
+  })
+
+  let partialRet = targets.filter((line) => {
+      return line != "";
+  });
+
+  /*
+  let mapObj = {};
+
+  // construct return map
+  partialRet.forEach(s => {
+      mapObj[s] = "";
+  });
+
+  return new Map(Object.entries(mapObj));
+  */
+
+  return partialRet;
+}
+function buildHappyName(sad) {
+  const match = sad.match(/^(.*)\.(js|ts|mjs|cjs):<(\d+),(\d+)>--<(\d+),(\d+)>$/);
+  if (!match) return sad;
+  // Preserve historical .js/.ts payload names; distinguish ESM/CJS extensions.
+  const tail = ['js','ts'].includes(match[2]) ? 'do' : 'dot' + match[2];
+  const prefix = (match[1].replace(/\./g, 'dot').replace(/-/g, 'dash').replace(/\//g, '_') + tail)
+    .replace(/[^A-Za-z0-9_$]/gu, c => '_u' + c.codePointAt(0).toString(16) + '_');
+  return prefix + '_' + match.slice(3).join('_');
+}
+// 生成函数id
+function generateNodeUID(n, filename, coverageMode) {
+  // console.log(n);
+  // acorn/src/location.js:<12,12>--<18,1>
+  let locString;
+  // let  startCol=colNum2V8(n.loc.start.line,n.loc.start.column,filename,'start')
+  // let endCol =colNum2V8(n.body.loc.end.line,n.body.loc.end.column,filename,'end')
+  locString = "<" + n.body.loc.start.line + "," + n.body.loc.start.column + ">--<" + n.body.loc.end.line + "," + n.body.loc.end.column + ">";
+
+
+  return buildHappyName(filename + ":" + locString);
+}
+
+function getTargetFromStatic(filepath) {
+  let listFunc = []
+  const static_result = path.join(__dirname, filepath)
+  let unprocessedCG = JSON.parse(fs.readFileSync(static_result, 'utf-8'));
+  unprocessedCG = unprocessedCG.map(item => {
+    item = item.replace(/\s+/g, '')
+    return item
+  })
+
+  let visitedItem = new Set()
+  // 返回函数调用结果列表
+  let targets = []
+
+  // 函数的调用关系
+  listFunc = listFunc.concat(unprocessedCG.filter(item => {
+    item = item.trim(' ').trim('"')
+    if (item.includes('<1,0>--<1,0>')) {
+      visitedItem.add(item)
+      return true
+    }
+  }))
+
+  listFunc.forEach(item => {
+    let target = item.split('->')[1]
+    findChildrenFunction(unprocessedCG, listFunc, target, visitedItem)
+
+  })
+
+  listFunc.forEach(line => {
+    let split_line = line.trim(' ').trim('"')
+    let [source, target] = split_line.split('->')
+    source = source.replace(/\"/g, '').replace(/\s/g, '')
+    target = target.replace(/\"/g, '').replace(/\s/g, '')
+    targets.push(source)
+    targets.push(target)
+  })
+
+
+  return targets;
+}
+
+// 从一个特定格式的调用图文件中提取目标信息
+function getTargetsFromACG(filepath, profpath, coverpath, curdir) {
+  let listFunc = []
+  // 静态结果
+  const static_result = path.join(__dirname, filepath)
+
+
+  // 读取指定路径下的文件，并按行拆分为数组 unprocessedCG
+  let unprocessedCG = JSON.parse(fs.readFileSync(static_result, 'utf-8'));
+
+  unprocessedCG = unprocessedCG.map(item => {
+    item = item.replace(/\s+/g, '')
+    return item
+  })
+
+  let visitedItem = new Set()
+  // const data = JSON.parse(fs.readFileSync(path.join(__dirname, profpath), 'utf8'));
+
+
+
+  // // node_prof结果
+  // let node_prof_global = []
+
+
+  // for (const key in data) {
+  //   if (key == 'system (Native)' || key == 'anon (Native)') {
+  //     for (const item of data[key]) {
+  //       if (!item.includes('{')) {
+  //         let temp = item.match(/\((.*?)\)/)[1]
+  //         let adjust_loc = temp.split('js:')
+  //         let loc_info = '<' + adjust_loc[1].split(':')[0] + ',' + adjust_loc[1].split(':')[1] + '>--<' + adjust_loc[1].split(':')[2] + ',' + (adjust_loc[1].split(':')[3] - 1) + '>'
+  //         node_prof_global.push(curdir + '/' + adjust_loc[0] + 'js' + loc_info)
+  //       }
+  //     }
+  //   } else {
+
+  //   }
+  //   // let matches = start.match(pattern2)
+  //   // start= matches.input.split(':')[0]+'<'+matches[1]+',fake>--<'+ matches[3]+','+ matches[4]+'>'
+
+  //   // data[key].forEach(item=>{
+  //   //   if(!item.includes('Native') && !item.includes(':{')){
+  //   //     item ='/'+cur_path+'/'+ item.split(' ')[item.includes('Native')?2:1].replace(/\(|\)/g,'').replace(':','\/')
+  //   //     matches = item.match(pattern2)
+  //   //     item = matches.input.split(':')[0]+'<'+matches[1]+',fake>--<'+ matches[3]+','+ matches[4]+'>'
+  //   //     dynamic_result.push(start+'->'+item)
+  //   //   }
+  //   // })
+  // }
+  // coverage结果
+  let cover_data = [] // RQ14 pilot: NodeProf supplies dynamic seeds; NYC is the SDCG baseline.
+  // Opt in explicitly: historical runs used the coverage/static path above.
+  if (process.env.STUBBIFIER_USE_NODEPROF === '1') {
+    const { getNodeProfTargets } = require('./nodeprofTargets.js');
+    const graphFile = process.env.STUBBIFIER_DYNAMIC_GRAPH || path.join(__dirname, profpath);
+    const dynamic = getNodeProfTargets(graphFile, path.join(__dirname, curdir), curdir);
+    cover_data = cover_data.concat(dynamic.targets);
+    const retained=JSON.parse(process.env.STUBBIFIER_RETAIN_ROOTS || '[]');
+    process.env.STUBBIFIER_RETAIN_ROOTS=JSON.stringify(Array.from(new Set(retained.concat(dynamic.retainedFiles))));
+    fs.writeFileSync(path.join(__dirname,'dynamic-mapping-audit.json'),JSON.stringify(dynamic,null,2)+'\n');
+    console.error('NODEPROF_TARGETS ' + JSON.stringify({ matched: dynamic.matchedNodes,
+      unresolved: dynamic.unresolved.length, excluded: dynamic.excluded.length,retainedFiles:dynamic.retainedFiles.length }));
+  }
+
+  // 返回函数调用结果列表
+  let targets = []
+
+  // 函数的调用关系
+  listFunc = listFunc.concat(unprocessedCG.filter(item => {
+    item = item.trim(' ').trim('"')
+    if (item.includes('<1,0>--<1,0>')) {
+      visitedItem.add(item)
+      return true
+    }
+  }))
+
+  listFunc.forEach(item => {
+    let target = item.split('->')[1]
+    findChildrenFunction(unprocessedCG, listFunc, target, visitedItem)
+
+  })
+
+  cover_data.forEach(item => {
+    targets.push(item)
+    findChildrenFunction(unprocessedCG, listFunc, item, visitedItem)
+  })
+  listFunc.forEach(line => {
+    let split_line = line.trim(' ').trim('"')
+    let [source, target] = split_line.split('->')
+    source = source.replace(/\"/g, '').replace(/\s/g, '')
+    target = target.replace(/\"/g, '').replace(/\s/g, '')
+    targets.push(source)
+    targets.push(target)
+  })
+
+
+  return targets;
+}
+
+function findChildrenFunction(allFunc, listFunc, parentId, visited) {
+  let res = allFunc.filter((item) => {
+    if (!visited.has(item)) {
+      parentId = parentId.replace(/\"/g, '').replace(/\s/g, '')
+      // Source IDs are exact nodes; a suffix of another filename is not a caller.
+      const normalize = value => value.replace(/\"/g, '').replace(/\s/g, '').replace(/^\/+/, '');
+      if (normalize(item.split('->')[0]) === normalize(parentId)) {
+        visited.add(item)
+        return true
+      }
+    }
+  })
+  if (res.length == 0) return
+  else {
+    res.forEach(item => {
+      listFunc.push(item)
+      findChildrenFunction(allFunc, listFunc, item.split('->')[1], visited)
+    })
+  }
+}
+// 获取代码覆盖率报告中未覆盖的函数信息，并将其返回
+function getTargetsFromCoverageReport(filepath) {
+  let uncoveredFunctions = getUncoveredFunctions(filepath);
+
+  return uncoveredFunctions;
+}
+
+// 提取未覆盖的函数信息，并以数组形式返回
+function getUncoveredFunctions(pathToCoverageReport) {
+  // 加载指定路径的代码覆盖率报告文件
+  const coverage = require(path.join(__dirname, pathToCoverageReport));
+  const calledFunctions = []; // 被调用列表
+  const uncalledFunctions = []; // 未被调用函数列表
+  Object.keys(coverage).forEach((fileName) => { //遍历覆盖率报告中的每个文件
+
+    Object.keys(coverage[fileName].fnMap).forEach((key) => { // 遍历每个文件中的函数
+      if (coverage[fileName].f[key] > 0) { // 根据覆盖率信息判断函数是否被调用
+        const loc = coverage[fileName].fnMap[key].loc;
+        calledFunctions.push(
+          `${path.relative(__dirname, fileName)}:<${loc.start.line},${loc.start.column}>--<${loc.end.line},${loc.end.column}>`
+        )
+      } else {
+        const loc = coverage[fileName].fnMap[key].loc;
+        uncalledFunctions.push(
+          `${path.relative(__dirname, fileName)}:<${loc.start.line},${loc.start.column}>--<${loc.end.line},${loc.end.column}>`
+        )
+      }
+    });
+  });
+  return calledFunctions;
+}
+// 获取文件名
+function getFileName(target) {
+  return target.split(":")[0];
+}
+
+// 获取文件名
+function getFileName2(target) {
+  return target.split(":<")[0];
+}
+
+// 检查是否存在危险函数调用的函数
+// 函数调用之前插入一段检查代码，以确保被调用的函数不是危险的函数
+// 创建一个临时变量 tempVarID 用于保存函数调用的函数。
+// 如果函数调用是一个成员表达式（MemberExpression），并且其属性是一个标识符（Identifier）或私有名称（PrivateName），则保存接收器（receiver）。
+// 如果有接收器，使用 bind 方法将调用函数绑定到接收器，以确保在后续的检查中可以比较两者是否相等。
+// 创建一个中间表达式 intermCallExp，用于检查 tempVarID 是否在危险函数数组中。
+// 创建一个条件语句，如果 tempVarID 在危险函数数组中，则输出警告信息。
+// 创建一个返回语句，调用原始的函数调用，并将其封装在一个箭头函数中。
+// 返回一个调用箭头函数的表达式
+function buildEvalCheck(callExpNode, inAsyncFct, filename) {
+  // if ( callee === eval ) { console.warn("BTW dangerous call"); }
+  // "let dangerousFunctions = [eval, process.exec];"
+  // ( () => let tempExp__uniqID = callee; if( tempExp__uniqID === eval) { console.warn("uh oh"); } return tempExp__uniqID; )()
+  var tempVarID = babel.identifier("tempExp__uniqID");
+  var tempVarDecl = babel.variableDeclaration("let", [babel.variableDeclarator(tempVarID, React.createElement("any", null, "callExpNode.callee)]); let tempVarDecls : babel.Statement[] = [tempVarDecl]; if (callExpNode.callee.type == \"MemberExpression\" && ( callExpNode.callee.property.type == \"Identifier\" || callExpNode.callee.property.type == \"PrivateName\")) ",
+    // If it's a memberExpression, we want to save the receiver.
+    let, " tempReceiverID: babel.Identifier = babel.identifier(\"tempEXP__rec__uniqID\"); let tempReceiver = babel.variableDeclaration(\"let\", [babel.variableDeclarator(tempReceiverID, callExpNode.callee.object)]); // callee.bind(callee.object) let tempBindCall: babel.CallExpression = babel.callExpression( babel.memberExpression(babel.memberExpression(tempReceiverID, callExpNode.callee.property, callExpNode.callee.computed), babel.identifier(\"bind\")), [tempReceiverID]); (", React.createElement("any", null, "tempBindCall).isNewCallExp = true; tempVarDecl = babel.variableDeclaration(\"let\", [babel.variableDeclarator(tempVarID, tempBindCall)]); tempVarDecls = [tempReceiver, tempVarDecl]; } let intermCallExp: babel.CallExpression = babel.callExpression( babel.memberExpression( babel.identifier(\"dangerousFunctions\"), babel.identifier(\"indexOf\") ), [ tempVarID] ); (", React.createElement("any", null, "intermCallExp).isNewCallExp = true; let test = babel.binaryExpression( \">\", intermCallExp, babel.numericLiteral(-1) ); let consequent: babel.Statement = babel.expressionStatement( babel.callExpression( babel.memberExpression( babel.identifier(\"console\"), babel.identifier(\"warn\") ), [ babel.stringLiteral(\"[STUBBIFIER METRICS] WARNING: Dangerous call in expanded stub, in file: \" + filename)] )); (", React.createElement("any", null, "consequent.expression).isNewCallExp = true; let ifCheckStmt: babel.IfStatement = babel.ifStatement( test, consequent); let retCallExp: babel.CallExpression = babel.callExpression(", React.createElement("any", null, "callExpNode.callee/*tempVarID*/, callExpNode.arguments); (", React.createElement("any", null, " retCallExp).isNewCallExp = true; let returnStmt: babel.ReturnStatement = babel.returnStatement( retCallExp); let arrowFunc: babel.ArrowFunctionExpression = babel.arrowFunctionExpression( [], // params babel.blockStatement(tempVarDecls.concat([ifCheckStmt, returnStmt])), inAsyncFct) // whether or not it should be async return babel.callExpression( arrowFunc, []); } // generate rollup.stubbifier.config.js in the directory specified export function generateBundlerConfig( dirname): void ",
+      /*
+          export default {
+            input: 'name of the main file in package.json',
+            output: {
+              dir: 'output',
+              format: 'cjs'
+            },
+            context: 'null',
+            moduleContext: 'null',
+            plugins: [nodeResolve({ moduleDirectories: ['node_modules'] }), commonjs(), babel()]
+          };
+      */
+      let, " mainPath= undefined; try ", let, " json = JSON.parse(fs.readFileSync(dirname + \"/package.json\", 'utf-8')); mainPath = json.main; } catch(e) ", " // if there's an error, then we're not using esm if( ! mainPath) ", mainPath = "index.js", "let configBody = `import nodeResolve from '@rollup/plugin-node-resolve'; import babel from '@rollup/plugin-babel'; import commonjs from '@rollup/plugin-commonjs'; import json from '@rollup/plugin-json'; export default ", input, ": '$", mainPath, "', output: ", file, ": 'stubbifyBundle.js', format: 'cjs' }, context: 'null', moduleContext: 'null', plugins: [nodeResolve(", moduleDirectories, ": ['node_modules'] }), commonjs(), babel(), json()] };`; configBody = generate( parse(configBody, ", sourceType, ": \"unambiguous\"}).program).code; fs.writeFileSync( dirname + \"/rollup.stubbifier.config.js\", configBody); }")))))))]);
+}
+
+// 生成一个 Rollup 打包工具的配置文件 rollup.stubbifier.config.js
+function generateBundlerConfig(dirname) {
+  /*
+      export default {
+        input: 'name of the main file in package.json',
+        output: {
+          dir: 'output',
+          format: 'cjs'
+        },
+        context: 'null',
+        moduleContext: 'null',
+        plugins: [nodeResolve({ moduleDirectories: ['node_modules'] }), commonjs(), babel()]
+      };
+  */
+
+  let mainPath = undefined;
+
+  try {
+    let json = JSON.parse(fs.readFileSync(dirname + "/package.json", 'utf-8'));
+    mainPath = json.main;
+  } catch (e) { } // if there's an error, then we're not using esm
+
+  if (!mainPath) {
+    mainPath = "index.js"
+  }
+
+  let configBody =
+    `import nodeResolve from '@rollup/plugin-node-resolve';
+   import babel from '@rollup/plugin-babel';
+   import commonjs from '@rollup/plugin-commonjs';
+   import json from '@rollup/plugin-json';
+
+   export default {
+        input: '${mainPath}',
+        output: {
+          file: 'stubbifyBundle.js',
+          format: 'cjs'
+        },
+        context: 'null',
+        moduleContext: 'null',
+        plugins: [nodeResolve({ moduleDirectories: ['node_modules'] }), commonjs(), babel(), json()]
+      };`;
+
+  configBody = generate(parser.parse(configBody, { sourceType: "unambiguous" }).program).code;
+  fs.writeFileSync(dirname + "/rollup.stubbifier.config.js", configBody);
+
+}
+
+function getNumLinesSpannedByNode(n) {
+  return n.loc.end.line - n.loc.start.line;
+}
+
+
+
+
+
+const SKIP_DIR = ['.nyc_output', '.git', 'coverage', 'build', 'docs', 'changelogs']
+// 获取指定目录下的所有文件路径，并递归获取子目录中的文件路径
+function getAllFiles(dirname, recurse = true, listOfFiles = [], dept) {
+  let baseListOfFiles = fs.readdirSync(dirname);
+
+  for (let i = 0; i < baseListOfFiles.length; i++) {
+    if (fs.statSync(path.join(dirname, baseListOfFiles[i])).isDirectory() &&
+      !SKIP_DIR.includes(baseListOfFiles[i]) &&
+      recurse) {
+      let node_mod_index = dirname.split("/").indexOf("node_modules")
+
+      if (node_mod_index > -1) {
+
+        if (dept && dept.indexOf(baseListOfFiles[i]) > -1) {
+          listOfFiles = listOfFiles.concat(getAllDepFiles(path.join(dirname, baseListOfFiles[i]), recurse, []));
+        }
+      }
+      else {
+        listOfFiles = getAllFiles(path.join(dirname, baseListOfFiles[i]), recurse, listOfFiles, dept);
+      }
+    }
+    else {
+      if (baseListOfFiles[i].endsWith('js') || baseListOfFiles[i].endsWith('ts')) {
+        listOfFiles.push(path.join(dirname, baseListOfFiles[i]));
+      }
+
+    }
+  }
+  return listOfFiles.filter(item => item != '');
+};
+
+
+const getAllDepFiles = function (dirname, recurse = false, listOfFiles = []) {
+  let baseListOfFiles = fs.readdirSync(dirname);
+
+  baseListOfFiles.forEach(function (file) {
+    if (fs.statSync(dirname + "/" + file).isDirectory() && recurse) {
+      listOfFiles = getAllDepFiles(dirname + "/" + file, recurse, listOfFiles);
+    } else {
+      if (file.endsWith('js') || file.endsWith('ts')) {
+        listOfFiles.push(path.join(dirname, file));
+      }
+    }
+  });
+
+  return listOfFiles;
+}
+// 确定是否应该对指定的文件进行stubbify操作
+function shouldStubbify(curPath, file, depList) {
+  if(process.env.SQJ_SCOPE_FILES) {
+    const root=path.resolve('Data',process.argv[3]);
+    const allowed=JSON.parse(fs.readFileSync(process.env.SQJ_SCOPE_FILES,'utf8')).files;
+    if(!allowed.includes(path.relative(root,curPath).split(path.sep).join('/'))) return false;
+  }
+  let shouldStub = fs.lstatSync(curPath).isFile() &&  // 检查文件是否为普通文件而不是目录
+    file.substr(file.length - 2) == "js" && // 检查文件是否以 ".js" 结尾
+    file.indexOf("externs") == -1 && //  确保文件名中不包含 "externs"
+    file.indexOf("node_modules/@babel") == -1 && // 确保文件路径中不包含 "@babel" 目录
+    (file.indexOf("test") == -1 ||
+      file.indexOf("node_modules") > -1);
+  // 如果传入了依赖列表 depList，则检查文件是否在依赖列表中。如果文件位于 "node_modules" 目录下，确保其在依赖列表中
+  if (depList) {
+    let node_mod_index = curPath.split("/").indexOf("node_modules");
+    if (node_mod_index > -1) { // if it's a node_module and we have a dep list, need to make sure it's in the dep list 
+      shouldStub = shouldStub && (depList.indexOf(curPath.split("/")[node_mod_index + 1]) > -1);
+    }
+  }
+  return shouldStub;
+}
+
+
+
+function getFunctionCode(sourceCode, body) {
+  var functionBodyLength = body.range[1] - body.range[0] - 2;
+  var startIndex = body.range[0] + 1;
+  var functionBody = sourceCode.slice(startIndex, startIndex + functionBodyLength);
+  return functionBody;
+}
+
+function fileFunctionCount(file,analysis_dir,analysis_mode) {
+  let functions = 0;
+  let src = fs.readFileSync(file, 'utf-8');
+  let ast
+  try {
+    ast = parser.parse(src, {
+      allowImportExportEverywhere: true,
+      allowAwaitOutsideFunction: true,
+      allowReturnOutsideFunction: true,
+      allowSuperOutsideMethod: true,
+      allowUndeclaredExports: true,
+      errorRecovery: true,
+      attachComment: false,
+      createParenthesizedExpressions: true,
+      sourceType: "unambiguous",
+      ranges: true,
+      jsx: true,
+      plugins: [
+        "estree",
+        "flow",
+        "jsx",
+        "decoratorAutoAccessors",
+        "doExpressions",
+        "exportDefaultFrom",
+        "functionBind",
+        "importAssertions",
+        "regexUnicodeSets",
+        ["decorators", { decoratorsBeforeExport: false }]
+      ]
+    })
+    esmMode = ast.sourceType == "module";
+  } catch (e) {
+    console.error("Yikes... parsing error in " + file + ":  " + e);
+    return;
+  }
+
+  try {
+    traverse(ast, {
+      enter(path) {
+        if (path.node.type == 'FunctionDeclaration'
+          || path.node.type == 'FunctionExpression'
+          || path.node.type == 'ArrowFunctionExpression') {
+          functions++
+        }
+      },
+    });
+
+
+  } catch (error) {
+    console.log(error);
+  }
+  const resultRoot = process.env.STUBBIFIER_RESULT_ROOT || path.join(__dirname, 'Data');
+  fs.appendFileSync(path.join(resultRoot, analysis_dir, `${analysis_mode}_fileFunctions.txt`),JSON.stringify({name:file,func:functions})+'\n')
+
+  return functions;
+
+}
+
+exports.buildHappyName = buildHappyName;
+exports.generateNodeUID = generateNodeUID;
+exports.getTargetsFromACG = getTargetsFromACG;
+exports.getTargetsFromCoverageReport = getTargetsFromCoverageReport;
+exports.getTargetFromStatic = getTargetFromStatic;
+exports.getUncoveredFunctions = getUncoveredFunctions;
+exports.getFileName = getFileName;
+exports.getFileName2 = getFileName2;
+exports.buildEvalCheck = buildEvalCheck;
+exports.generateBundlerConfig = generateBundlerConfig;
+exports.getNumLinesSpannedByNode = getNumLinesSpannedByNode;
+exports.getAllFiles = getAllFiles;
+exports.shouldStubbify = shouldStubbify;
+exports.fileFunctionCount = fileFunctionCount;
+exports.staticgetFromACG = staticgetFromACG;

@@ -1,0 +1,858 @@
+{
+ "schemaVersion": 1,
+ "source": "基于混合分析的服务端JavaScript膨胀代码检测与移除方法-2025.10.13.docx, tables 2-7",
+ "extractionNote": "Transcribed from the submitted manuscript. Table 3 is transformation size, table 4 is MECS, table 5 is the library x client loading matrix (only prop-types, redux and send appear there), table 6 is the library x client execution-time matrix, table 7 is the own-method phase split. Averages are computed by the reconciliation script, not copied.",
+ "applications": {
+  "body-parser": {
+   "codeLines": "20k",
+   "files": 210,
+   "functions": 974,
+   "applicationKB": 341,
+   "osKB": 341,
+   "ts": {
+    "sscg": 65,
+    "sdcg": 154,
+    "hybrid": 169
+   },
+   "reductionPercent": {
+    "sscg": 81,
+    "sdcg": 55,
+    "hybrid": 54
+   },
+   "mecs": {
+    "sscg": 197.64,
+    "sdcg": 64.95,
+    "hybrid": 66.6
+   },
+   "ownPhasesSeconds": {
+    "static": 2.26,
+    "dynamic": 10.53,
+    "fusionAndTransform": 4.23,
+    "total": 17.02
+   }
+  },
+  "compression": {
+   "codeLines": "13k",
+   "files": 149,
+   "functions": 258,
+   "applicationKB": 64,
+   "osKB": 64,
+   "ts": {
+    "sscg": 24,
+    "sdcg": 44,
+    "hybrid": 48
+   },
+   "reductionPercent": {
+    "sscg": 63,
+    "sdcg": 31,
+    "hybrid": 25
+   },
+   "mecs": {
+    "sscg": 0,
+    "sdcg": 0,
+    "hybrid": 0
+   },
+   "ownPhasesSeconds": {
+    "static": 0.7,
+    "dynamic": 6.78,
+    "fusionAndTransform": 1.17,
+    "total": 8.65
+   }
+  },
+  "css-loader": {
+   "codeLines": "71k",
+   "files": 1299,
+   "functions": 3047,
+   "applicationKB": 2798,
+   "osKB": 2698,
+   "ts": {
+    "sscg": 559,
+    "sdcg": 584,
+    "hybrid": 890
+   },
+   "reductionPercent": {
+    "sscg": 79,
+    "sdcg": 78,
+    "hybrid": 67
+   },
+   "mecs": {
+    "sscg": 461.22,
+    "sdcg": 450.34,
+    "hybrid": 431.13
+   },
+   "ownPhasesSeconds": {
+    "static": 10.06,
+    "dynamic": 48.61,
+    "fusionAndTransform": 16.8,
+    "total": 75.47
+   }
+  },
+  "memfs": {
+   "codeLines": "18k",
+   "files": 133,
+   "functions": 439,
+   "applicationKB": 147,
+   "osKB": 147,
+   "ts": {
+    "sscg": 19,
+    "sdcg": 17,
+    "hybrid": 19
+   },
+   "reductionPercent": {
+    "sscg": 87,
+    "sdcg": 88,
+    "hybrid": 87
+   },
+   "mecs": {
+    "sscg": 93.6,
+    "sdcg": 116.1,
+    "hybrid": 31.73
+   },
+   "ownPhasesSeconds": {
+    "static": 2.43,
+    "dynamic": 15.97,
+    "fusionAndTransform": 1.71,
+    "total": 20.12
+   }
+  },
+  "memory-fs": {
+   "codeLines": "14k",
+   "files": 167,
+   "functions": 348,
+   "applicationKB": 116,
+   "osKB": 116,
+   "ts": {
+    "sscg": 41,
+    "sdcg": 96,
+    "hybrid": 98
+   },
+   "reductionPercent": {
+    "sscg": 65,
+    "sdcg": 17,
+    "hybrid": 16
+   },
+   "mecs": {
+    "sscg": 37.6,
+    "sdcg": 11.34,
+    "hybrid": 9.96
+   },
+   "ownPhasesSeconds": {
+    "static": 0.69,
+    "dynamic": 5.33,
+    "fusionAndTransform": 1.82,
+    "total": 7.84
+   }
+  },
+  "morgan": {
+   "codeLines": "14k",
+   "files": 159,
+   "functions": 438,
+   "applicationKB": 55,
+   "osKB": 55,
+   "ts": {
+    "sscg": 25,
+    "sdcg": 49,
+    "hybrid": 51
+   },
+   "reductionPercent": {
+    "sscg": 55,
+    "sdcg": 11,
+    "hybrid": 7
+   },
+   "mecs": {
+    "sscg": 19.2,
+    "sdcg": 2.95,
+    "hybrid": 2.95
+   },
+   "ownPhasesSeconds": {
+    "static": 0.51,
+    "dynamic": 8.65,
+    "fusionAndTransform": 1.12,
+    "total": 10.28
+   }
+  },
+  "prop-types": {
+   "codeLines": "15k",
+   "files": 152,
+   "functions": 582,
+   "applicationKB": 58,
+   "osKB": 58,
+   "ts": {
+    "sscg": 13,
+    "sdcg": 16,
+    "hybrid": 17
+   },
+   "reductionPercent": {
+    "sscg": 78,
+    "sdcg": 72,
+    "hybrid": 70
+   },
+   "mecs": {
+    "sscg": 38.27,
+    "sdcg": 30.62,
+    "hybrid": 29.2
+   },
+   "ownPhasesSeconds": {
+    "static": 1.76,
+    "dynamic": 12.79,
+    "fusionAndTransform": 1.15,
+    "total": 15.7
+   }
+  },
+  "redux": {
+   "codeLines": "105k",
+   "files": 4491,
+   "functions": 750,
+   "applicationKB": 266,
+   "osKB": 266,
+   "ts": {
+    "sscg": 201,
+    "sdcg": 204,
+    "hybrid": 218
+   },
+   "reductionPercent": {
+    "sscg": 24,
+    "sdcg": 23,
+    "hybrid": 18
+   },
+   "mecs": {
+    "sscg": 20.06,
+    "sdcg": 20.06,
+    "hybrid": 11.02
+   },
+   "ownPhasesSeconds": {
+    "static": 0.73,
+    "dynamic": 182.02,
+    "fusionAndTransform": 4.33,
+    "total": 187.08
+   }
+  },
+  "send": {
+   "codeLines": "14k",
+   "files": 157,
+   "functions": 461,
+   "applicationKB": 96,
+   "osKB": 96,
+   "ts": {
+    "sscg": 59,
+    "sdcg": 86,
+    "hybrid": 91
+   },
+   "reductionPercent": {
+    "sscg": 39,
+    "sdcg": 10,
+    "hybrid": 5
+   },
+   "mecs": {
+    "sscg": 26.41,
+    "sdcg": 3.58,
+    "hybrid": 0.88
+   },
+   "ownPhasesSeconds": {
+    "static": 1.18,
+    "dynamic": 7.57,
+    "fusionAndTransform": 1.67,
+    "total": 10.42
+   }
+  },
+  "serve-static": {
+   "codeLines": "13k",
+   "files": 160,
+   "functions": 331,
+   "applicationKB": 106,
+   "osKB": 106,
+   "ts": {
+    "sscg": 38,
+    "sdcg": 95,
+    "hybrid": 98
+   },
+   "reductionPercent": {
+    "sscg": 64,
+    "sdcg": 10,
+    "hybrid": 8
+   },
+   "mecs": {
+    "sscg": 36,
+    "sdcg": 3.58,
+    "hybrid": 0.88
+   },
+   "ownPhasesSeconds": {
+    "static": 0.28,
+    "dynamic": 7.51,
+    "fusionAndTransform": 0.68,
+    "total": 8.47
+   }
+  }
+ },
+ "libraryByClientLoading": [
+  {
+   "library": "prop-types",
+   "client": "react-date",
+   "sscg": {
+    "LFL": 0,
+    "LFT": 0,
+    "LCS": 0
+   },
+   "sdcg": {
+    "LFL": 0,
+    "LFT": 0,
+    "LCS": 0
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 0,
+    "LCS": 0
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-loadable",
+   "sscg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "sdcg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "hybrid": {
+    "LFL": 5,
+    "LFT": 1,
+    "LCS": 36.5
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-redux",
+   "sscg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "sdcg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "hybrid": {
+    "LFL": 5,
+    "LFT": 1,
+    "LCS": 36.5
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "redux-form",
+   "sscg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "sdcg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "hybrid": {
+    "LFL": 5,
+    "LFT": 1,
+    "LCS": 36.5
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-dropzone",
+   "sscg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "sdcg": {
+    "LFL": 7,
+    "LFT": 0,
+    "LCS": 38.27
+   },
+   "hybrid": {
+    "LFL": 5,
+    "LFT": 1,
+    "LCS": 36.5
+   }
+  },
+  {
+   "library": "redux",
+   "client": "Choices",
+   "sscg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "sdcg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 2,
+    "LCS": 9.68
+   }
+  },
+  {
+   "library": "redux",
+   "client": "griddle",
+   "sscg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "sdcg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 2,
+    "LCS": 9.68
+   }
+  },
+  {
+   "library": "redux",
+   "client": "reactBeautifulDnd",
+   "sscg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "sdcg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 9,
+    "LCS": 17.88
+   }
+  },
+  {
+   "library": "redux",
+   "client": "found",
+   "sscg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "sdcg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 9,
+    "LCS": 17.88
+   }
+  },
+  {
+   "library": "redux",
+   "client": "redux-ignore",
+   "sscg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "sdcg": {
+    "LFL": 1,
+    "LFT": 0,
+    "LCS": 20.06
+   },
+   "hybrid": {
+    "LFL": 0,
+    "LFT": 2,
+    "LCS": 9.68
+   }
+  },
+  {
+   "library": "send",
+   "client": "connectGzipStatic",
+   "sscg": {
+    "LFL": 20,
+    "LFT": 0,
+    "LCS": 33
+   },
+   "sdcg": {
+    "LFL": 4,
+    "LFT": 0,
+    "LCS": 3.58
+   },
+   "hybrid": {
+    "LFL": 3,
+    "LFT": 0,
+    "LCS": 0.88
+   }
+  },
+  {
+   "library": "send",
+   "client": "gulp-connect",
+   "sscg": {
+    "LFL": 20,
+    "LFT": 0,
+    "LCS": 33
+   },
+   "sdcg": {
+    "LFL": 4,
+    "LFT": 0,
+    "LCS": 3.58
+   },
+   "hybrid": {
+    "LFL": 3,
+    "LFT": 0,
+    "LCS": 0.88
+   }
+  },
+  {
+   "library": "send",
+   "client": "express",
+   "sscg": {
+    "LFL": 20,
+    "LFT": 0,
+    "LCS": 33
+   },
+   "sdcg": {
+    "LFL": 4,
+    "LFT": 0,
+    "LCS": 3.58
+   },
+   "hybrid": {
+    "LFL": 3,
+    "LFT": 0,
+    "LCS": 0.88
+   }
+  },
+  {
+   "library": "send",
+   "client": "harp",
+   "sscg": {
+    "LFL": 20,
+    "LFT": 0,
+    "LCS": 33
+   },
+   "sdcg": {
+    "LFL": 4,
+    "LFT": 0,
+    "LCS": 3.58
+   },
+   "hybrid": {
+    "LFL": 3,
+    "LFT": 0,
+    "LCS": 0.88
+   }
+  },
+  {
+   "library": "send",
+   "client": "serve-static",
+   "sscg": {
+    "LFL": 20,
+    "LFT": 0,
+    "LCS": 33
+   },
+   "sdcg": {
+    "LFL": 4,
+    "LFT": 0,
+    "LCS": 3.58
+   },
+   "hybrid": {
+    "LFL": 3,
+    "LFT": 0,
+    "LCS": 0.88
+   }
+  }
+ ],
+ "libraryByClientTiming": [
+  {
+   "library": "prop-types",
+   "client": "react-date",
+   "originalSeconds": 4.6,
+   "sscg": {
+    "ET": 4.6,
+    "SD": 0
+   },
+   "sdcg": {
+    "ET": 4.6,
+    "SD": 0
+   },
+   "hybrid": {
+    "ET": 4.61,
+    "SD": 0
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-loadable",
+   "originalSeconds": 11.46,
+   "sscg": {
+    "ET": 13.55,
+    "SD": 18.2
+   },
+   "sdcg": {
+    "ET": 13.53,
+    "SD": 18.0
+   },
+   "hybrid": {
+    "ET": 12.88,
+    "SD": 12.4
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-redux",
+   "originalSeconds": 27.61,
+   "sscg": {
+    "ET": 29.55,
+    "SD": 7.0
+   },
+   "sdcg": {
+    "ET": 29.58,
+    "SD": 7.1
+   },
+   "hybrid": {
+    "ET": 28.5,
+    "SD": 3.2
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "redux-form",
+   "originalSeconds": 34.32,
+   "sscg": {
+    "ET": 36.02,
+    "SD": 5.0
+   },
+   "sdcg": {
+    "ET": 36.05,
+    "SD": 5.0
+   },
+   "hybrid": {
+    "ET": 35.87,
+    "SD": 4.5
+   }
+  },
+  {
+   "library": "prop-types",
+   "client": "react-dropzone",
+   "originalSeconds": 47.83,
+   "sscg": {
+    "ET": 50.59,
+    "SD": 5.8
+   },
+   "sdcg": {
+    "ET": 50.59,
+    "SD": 5.8
+   },
+   "hybrid": {
+    "ET": 49.01,
+    "SD": 2.5
+   }
+  },
+  {
+   "library": "redux",
+   "client": "Choices",
+   "originalSeconds": 5.06,
+   "sscg": {
+    "ET": 5.06,
+    "SD": 0
+   },
+   "sdcg": {
+    "ET": 5.05,
+    "SD": 0
+   },
+   "hybrid": {
+    "ET": 5.06,
+    "SD": 0
+   }
+  },
+  {
+   "library": "redux",
+   "client": "griddle",
+   "originalSeconds": 8.93,
+   "sscg": {
+    "ET": 9.0,
+    "SD": 0.7
+   },
+   "sdcg": {
+    "ET": 9.01,
+    "SD": 0.9
+   },
+   "hybrid": {
+    "ET": 8.97,
+    "SD": 0.4
+   }
+  },
+  {
+   "library": "redux",
+   "client": "reactBeautifulDnd",
+   "originalSeconds": 61.7,
+   "sscg": {
+    "ET": 62.04,
+    "SD": 0.6
+   },
+   "sdcg": {
+    "ET": 62.12,
+    "SD": 0.6
+   },
+   "hybrid": {
+    "ET": 62.1,
+    "SD": 0.6
+   }
+  },
+  {
+   "library": "redux",
+   "client": "found",
+   "originalSeconds": 30.61,
+   "sscg": {
+    "ET": 31.34,
+    "SD": 2.4
+   },
+   "sdcg": {
+    "ET": 31.34,
+    "SD": 2.4
+   },
+   "hybrid": {
+    "ET": 31.25,
+    "SD": 2.1
+   }
+  },
+  {
+   "library": "redux",
+   "client": "redux-ignore",
+   "originalSeconds": 0.57,
+   "sscg": {
+    "ET": 0.59,
+    "SD": 3.4
+   },
+   "sdcg": {
+    "ET": 0.59,
+    "SD": 3.4
+   },
+   "hybrid": {
+    "ET": 0.56,
+    "SD": 0
+   }
+  },
+  {
+   "library": "send",
+   "client": "connectGzipStatic",
+   "originalSeconds": 0.97,
+   "sscg": {
+    "ET": 1.47,
+    "SD": 51.5
+   },
+   "sdcg": {
+    "ET": 1.14,
+    "SD": 17.5
+   },
+   "hybrid": {
+    "ET": 1.09,
+    "SD": 12.4
+   }
+  },
+  {
+   "library": "send",
+   "client": "gulp-connect",
+   "originalSeconds": 1.0,
+   "sscg": {
+    "ET": 1.42,
+    "SD": 42.0
+   },
+   "sdcg": {
+    "ET": 1.15,
+    "SD": 15.0
+   },
+   "hybrid": {
+    "ET": 1.1,
+    "SD": 10.0
+   }
+  },
+  {
+   "library": "send",
+   "client": "express",
+   "originalSeconds": 4.48,
+   "sscg": {
+    "ET": 6.15,
+    "SD": 37.3
+   },
+   "sdcg": {
+    "ET": 4.63,
+    "SD": 3.3
+   },
+   "hybrid": {
+    "ET": 4.57,
+    "SD": 2.0
+   }
+  },
+  {
+   "library": "send",
+   "client": "harp",
+   "originalSeconds": 3.01,
+   "sscg": {
+    "ET": 3.5,
+    "SD": 16.3
+   },
+   "sdcg": {
+    "ET": 3.13,
+    "SD": 4.0
+   },
+   "hybrid": {
+    "ET": 3.06,
+    "SD": 1.67
+   }
+  },
+  {
+   "library": "send",
+   "client": "serve-static",
+   "originalSeconds": 1.37,
+   "sscg": {
+    "ET": 1.65,
+    "SD": 20.4
+   },
+   "sdcg": {
+    "ET": 1.48,
+    "SD": 8.0
+   },
+   "hybrid": {
+    "ET": 1.42,
+    "SD": 3.6
+   }
+  }
+ ],
+ "knownDiscrepancies": [
+  {
+   "scope": "compression, all three arms",
+   "observation": "Published MECS is 0/0/0 while the same manuscript reports non-zero loading for the other libraries and the clients do expand stubs.",
+   "classification": "pipeline accident in the submitted run, not an algorithmic result; excluded from reconciliation targets"
+  },
+  {
+   "scope": "send and serve-static, SDCG and hybrid columns",
+   "observation": "The two libraries share bit-identical SDCG and hybrid MECS (3.58 and 0.88) although their SSCG columns and transformation sizes differ.",
+   "classification": "copy/paste in the submitted table; excluded from reconciliation targets"
+  },
+  {
+   "scope": "memfs, redux, send, serve-static, prop-types (table 4 vs table 5)",
+   "observation": "Transformation sizes differ by <=2%, i.e. nearly identical stub sets, yet published MECS differ up to 4x.",
+   "classification": "internally inconsistent; excluded from reconciliation targets"
+  },
+  {
+   "scope": "body-parser, hybrid",
+   "observation": "Published hybrid TS (169) exceeds SDCG TS (154) yet reports a larger MECS, which contradicts 'more retained code expands less'.",
+   "classification": "direction contradiction; excluded from reconciliation targets"
+  },
+  {
+   "scope": "all libraries, SSCG column",
+   "observation": "Published SSCG MECS is about 33% lower than the measured value on the frozen image.",
+   "classification": "stub granularity: FILE CASE expands a whole file, FUNCTION CASE only the touched function, and the target-scope rule that matches table 3 differs from the one that matches table 4."
+  }
+ ]
+}

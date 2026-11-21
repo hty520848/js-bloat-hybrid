@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Mean Expanded Code Size after On-Demand Recovery (KB)}
+\label{tab:mecs}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{0.77\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Library & SSCG & SDCG & Hybrid \\
+\midrule
+body-parser & 197.64 & 64.95 & 66.60 \\
+compression & 0.00 & 0.00 & 0.00 \\
+css-loader & 461.22 & 450.34 & 431.13 \\
+memfs & 93.60 & 116.10 & 31.73 \\
+memory-fs & 37.60 & 11.34 & 9.96 \\
+morgan & 19.20 & 2.95 & 2.95 \\
+prop-types & 38.27 & 30.62 & 29.20 \\
+redux & 20.06 & 20.06 & 11.02 \\
+send & 26.41 & 3.58 & 0.88 \\
+serve-static & 36.00 & 3.58 & 0.88 \\
+\midrule
+\textbf{Average} & \textbf{92.97} & \textbf{70.31} & \textbf{58.43} \\
+\bottomrule
+\end{tabular*}
+\end{table}

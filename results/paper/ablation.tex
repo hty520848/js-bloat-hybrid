@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Component Comparison on memory-fs, morgan, and send}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{4.4pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}lrrrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Our-Static} & \multicolumn{2}{c}{Our-Dynamic} & \multicolumn{2}{c}{Our-Hybrid} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Library & Accuracy & Red. & Accuracy & Red. & Accuracy & Red. \\
+\midrule
+memory-fs & 36.27\% & 2.63\% & 72.09\% & 20.48\% & 78.50\% & 16.00\% \\
+morgan & 49.77\% & 1.36\% & 67.48\% & 14.88\% & 62.30\% & 7.00\% \\
+send & 51.56\% & 5.04\% & 64.22\% & 18.53\% & 76.40\% & 5.00\% \\
+\midrule
+\textbf{Average} & \textbf{45.87\%} & \textbf{3.01\%} & \textbf{67.93\%} & \textbf{17.96\%} & \textbf{72.40\%} & \textbf{9.33\%} \\
+\bottomrule
+\end{tabular*}
+\end{table}

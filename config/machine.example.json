@@ -1,0 +1,22 @@
+{
+  "nodeTest": "/absolute/path/to/node-v14.21.3/bin/node",
+  "nodeStatic": "/absolute/path/to/node-v16.14.1/bin/node",
+  "graalNode": "/absolute/path/to/graalvm-ce-java11-21.3.0/bin/node",
+  "nodeprofLoader": "/absolute/path/to/nodeprof-src/src/ch.usi.inf.nodeprof/js/jalangi.js",
+  "nodeprofJar": "/absolute/path/to/frozen/profile-runtimes/runtime21-20261102-004/nodeprof.jar",
+  "staticNodeModules": "/absolute/path/to/frozen/static/node_modules",
+  "transformerNodeModules": "/absolute/path/to/frozen/transformer/node_modules",
+  "harnessRoot": "/absolute/path/to/frozen/client-harness",
+  "packageManagerBin": "/absolute/path/to/frozen/client-harness/environment/package-managers/bin",
+  "protectedLegacyRoots": [],
+  "externalBaselines": {},
+  "stubbifierBaselines": {
+    "codeql": "/absolute/path/to/codeql-2.3.4/codeql",
+    "searchPath": "/absolute/path/to/codeql-library-1.26.0",
+    "querySha256": "06f0fdd9c114277219065d9b214fbf7b43ad3b96447e0f5af29e3b34eef6e259",
+    "coverageNodeModules": "/absolute/path/to/frozen/targets/css-loader/node_modules"
+  },
+  "targets": {},
+  "clients": {},
+  "note": "For the paper experiments, generate config/machine.frozen.json with scripts/import_inputs.py. The manifest configures the css-loader profiler override. This file illustrates the configuration fields for custom inputs."
+}

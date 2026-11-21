@@ -1,0 +1,34 @@
+\begin{table}[!htbp]
+\centering
+\caption{Standalone evaluation of static call graphs}
+\label{tab:mcg_static}
+\small
+\setlength{\tabcolsep}{4.3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{\linewidth}{@{}l@{}}
+\begin{minipage}{\linewidth}
+\textbf{(a) SunSpider: 14 single-file programs}\par\smallskip
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}lrrrrrr@{}}
+\toprule
+Method & Nodes & Edges & TP & Precision & Recall & $F_1$ \\
+\midrule
+WALA & 94 & 110 & 90 & 0.67 & 0.93 & 0.78 \\
+ACG & 159 & 190 & 130 & 0.68 & 0.88 & 0.77 \\
+NPM-CG & 133 & 163 & 98 & 0.60 & 0.67 & 0.60 \\
+Closure Compiler & 141 & 187 & 129 & 0.69 & 0.88 & 0.77 \\
+MCG (Ours) & 165 & 202 & 142 & 0.70 & 0.96 & 0.84 \\
+\bottomrule
+\end{tabular*}\par\medskip
+\textbf{(b) Six multi-file Node.js libraries}\par\smallskip
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Method & Total edges & \makecell[r]{Sampled edges\\(verified true)} & \makecell[r]{Sampled\\precision} \\
+\midrule
+ACG & 1,906 & 202 (151) & 75\% \\
+MCG-NO-MODULE & 1,687 & 172 (135) & 78\% \\
+MCG (Ours) & 3,641 & 370 (295) & 80\% \\
+\bottomrule
+\end{tabular*}
+\end{minipage}\\
+\end{tabular*}
+\end{table}

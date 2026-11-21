@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Library Size Reduction Comparison Across Methods}
+\label{tab:size_reduction}
+\small
+\setlength{\tabcolsep}{3.8pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}lrrrrrrr@{}}
+\toprule
+& & \multicolumn{2}{c}{SSCG} & \multicolumn{2}{c}{SDCG} & \multicolumn{2}{c}{Hybrid} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(l){7-8}
+Library & \makecell[r]{OS\\(KB)} & \makecell[r]{TS\\(KB)} & Red. & \makecell[r]{TS\\(KB)} & Red. & \makecell[r]{TS\\(KB)} & Red. \\
+\midrule
+body-parser & 341 & 65 & 81\% & 154 & 55\% & 169 & 54\% \\
+compression & 64 & 24 & 63\% & 44 & 31\% & 48 & 25\% \\
+css-loader & 2,698 & 559 & 79\% & 584 & 78\% & 890 & 67\% \\
+memfs & 147 & 19 & 87\% & 17 & 88\% & 19 & 87\% \\
+memory-fs & 116 & 41 & 65\% & 96 & 17\% & 98 & 16\% \\
+morgan & 55 & 25 & 55\% & 49 & 11\% & 51 & 7\% \\
+redux & 266 & 201 & 24\% & 204 & 23\% & 218 & 18\% \\
+prop-types & 58 & 13 & 78\% & 16 & 72\% & 17 & 70\% \\
+send & 96 & 59 & 39\% & 86 & 10\% & 91 & 5\% \\
+serve-static & 106 & 38 & 64\% & 95 & 10\% & 98 & 8\% \\
+\midrule
+\textbf{Average} & \textbf{394.7} & \textbf{104.0} & \textbf{63.5\%} & \textbf{134.5} & \textbf{39.5\%} & \textbf{169.9} & \textbf{35.7\%} \\
+\bottomrule
+\end{tabular*}
+\end{table}

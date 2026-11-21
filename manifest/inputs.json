@@ -1,0 +1,70 @@
+{
+  "experimentInputs": {
+    "file": "../inputs/js-bloat-hybrid-inputs-20261025b-v3-public.tgz",
+    "bytes": 4195179050,
+    "sha256": "bc7e91d6a8f723a009c89c4a8e634815364e3c034448023385ca3162777d4713",
+    "derivedFromSha256": "e64dfd4519773e45e28226e50da25de02902f6590c1fc7bbc78a402b1fd79157"
+  },
+  "staticReference": {
+    "file": "../inputs/StaticJSCallGraphs.zip",
+    "bytes": 10544440,
+    "sha256": "5db67e2d982dfc5311d0d24e971da84f31d7faf929e56afd3b9b37ba842290b5"
+  },
+  "staticSources": {
+    "file": "../inputs/js-bloat-hybrid-static-inputs-20261025b-v1.tgz",
+    "bytes": 10790168,
+    "sha256": "5e65b325ba304bfa94f78d6eca5085f793336bc311f0b2f1b4bc07ab125c733c"
+  },
+  "staticMultifile": {
+    "file": "../inputs/static-multifile.tar.gz",
+    "bytes": 4766203,
+    "sha256": "a16121c9b230b24d7a8fa9533cf37a917b91e89c8fdfa8e6be6c4f519cf1e673"
+  },
+  "profileRuntimes": {
+    "file": "../inputs/nodeprof-runtimes.tar.gz",
+    "bytes": 997986301,
+    "sha256": "f743a3d58766cf46e5180905fdd9511f48e37ceca06e331f5c7c54a15d023e40"
+  },
+  "codeqlCli": {
+    "file": "../inputs/codeql-linux64-2.3.4.zip",
+    "bytes": 249615081,
+    "sha256": "dfaaae5bee41ba64e6647f65f3bfa0da2263d9547ecc11ab79187e0276fb85b3"
+  },
+  "codeqlLibrary": {
+    "file": "../inputs/codeql-library-1.26.0.tar.gz",
+    "bytes": 13590346,
+    "sha256": "8a3c8be536ff59614208bd1e4269d34c9dbb4f27c0841db5a042f59a854c1a19"
+  },
+  "codeqlModules": {
+    "file": "../inputs/Modules.qll",
+    "bytes": 9964,
+    "sha256": "5ef9622c05294e6a0543ca38c8f0014aa30df6c9c5900f3d91cec9a9f07c94d6"
+  },
+  "profileConfiguration": {
+    "default": {
+      "graalNode": "{INPUTS}/profile-runtimes/runtime21-20261102-004/graal/graalvm-ce-java11-21.3.0/bin/node",
+      "nodeprofJar": "{INPUTS}/profile-runtimes/runtime21-20261102-004/nodeprof.jar",
+      "nodeprofLoader": "{INPUTS}/profile-runtimes/runtime21-20261102-004/source/nodeprof.js-652665b0bdb5b5a0dd10b09404c1c0635c7512ed/src/ch.usi.inf.nodeprof/js/jalangi.js"
+    },
+    "overrides": {
+      "css-loader": {
+        "graalNode": "{INPUTS}/profile-runtimes/runtime23-20261105-004/graal/graalvm-community-openjdk-17.0.8+7.1/bin/node",
+        "nodeprofJar": "{INPUTS}/profile-runtimes/runtime23-20261105-004/graal/graalvm-community-openjdk-17.0.8+7.1/tools/nodeprof/nodeprof.jar",
+        "nodeprofLoader": "{INPUTS}/profile-runtimes/runtime23-20261105-004/source/nodeprof.js-5cccefc56dbd144f6a9ff303288dc1f4441f30d4/src/ch.usi.inf.nodeprof/js/jalangi.js",
+        "profileArguments": [
+          "--jvm",
+          "--polyglot",
+          "--experimental-options",
+          "--js.webassembly=true",
+          "--openssl-legacy-provider",
+          "--vm.Dtruffle.class.path.append={INPUTS}/profile-runtimes/runtime23-20261105-004/graal/graalvm-community-openjdk-17.0.8+7.1/tools/nodeprof/nodeprof.jar"
+        ]
+      }
+    }
+  },
+  "portableConfiguration": {
+    "file": "portable-machine.json",
+    "bytes": 56967,
+    "sha256": "67668f7a75677f38e508a95628ab5bcc71c29369f63afe2b2535c3b620269fb5"
+  }
+}

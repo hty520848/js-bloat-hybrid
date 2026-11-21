@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\caption{Fine-Grained Secondary Stub Loading Statistics (LFL, LFT, and LCS)}
+\label{tab:stub_stats}
+\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}llrrrrrrrrr@{}}
+\toprule
+& & \multicolumn{3}{c}{SSCG} & \multicolumn{3}{c}{SDCG} & \multicolumn{3}{c}{Hybrid} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(l){9-11}
+Library & Client & LFL & LFT & \makecell[r]{LCS\\(KB)} & LFL & LFT & \makecell[r]{LCS\\(KB)} & LFL & LFT & \makecell[r]{LCS\\(KB)} \\
+\midrule
+prop-types & react-date & 0 & 0 & 0.00 & 0 & 0 & 0.00 & 0 & 0 & 0.00 \\
+ & react-loadable & 7 & 0 & 38.27 & 7 & 0 & 38.27 & 5 & 1 & 36.50 \\
+ & react-redux & 7 & 0 & 38.27 & 7 & 0 & 38.27 & 5 & 1 & 36.50 \\
+ & redux-form & 7 & 0 & 38.27 & 7 & 0 & 38.27 & 5 & 1 & 36.50 \\
+ & react-dropzone & 7 & 0 & 38.27 & 7 & 0 & 38.27 & 5 & 1 & 36.50 \\
+\addlinespace[4pt]
+redux & Choices & 1 & 0 & 20.06 & 1 & 0 & 20.06 & 0 & 2 & 9.68 \\
+ & griddle & 1 & 0 & 20.06 & 1 & 0 & 20.06 & 0 & 2 & 9.68 \\
+ & reactBeautifulDnd & 1 & 0 & 20.06 & 1 & 0 & 20.06 & 0 & 9 & 17.88 \\
+ & found & 1 & 0 & 20.06 & 1 & 0 & 20.06 & 0 & 9 & 17.88 \\
+ & redux-ignore & 1 & 0 & 20.06 & 1 & 0 & 20.06 & 0 & 2 & 9.68 \\
+\addlinespace[4pt]
+send & connectGzipStatic & 20 & 0 & 33.00 & 4 & 0 & 3.58 & 3 & 0 & 0.88 \\
+ & gulp-connect & 20 & 0 & 33.00 & 4 & 0 & 3.58 & 3 & 0 & 0.88 \\
+ & express & 20 & 0 & 33.00 & 4 & 0 & 3.58 & 3 & 0 & 0.88 \\
+ & harp & 20 & 0 & 33.00 & 4 & 0 & 3.58 & 3 & 0 & 0.88 \\
+ & serve-static & 20 & 0 & 33.00 & 4 & 0 & 3.58 & 3 & 0 & 0.88 \\
+\bottomrule
+\end{tabular*}
+\end{table}

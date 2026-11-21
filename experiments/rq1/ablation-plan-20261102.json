@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "design-frozen-pending-runtime-qualification",
+  "questions": ["RQ1 size reduction", "RQ1 independent workload-conditioned bloat precision"],
+  "libraries": ["body-parser", "compression", "css-loader", "memfs", "memory-fs", "morgan", "prop-types", "redux", "send", "serve-static"],
+  "arms": ["mcg-only", "nodeprof-only", "hybrid"],
+  "constantAcrossArms": ["official release bytes", "production dependency closure", "source function universe", "short-function and unmapped-source policy", "transformer", "recovery helper", "browser-runtime retention", "complete target validation suite"],
+  "metrics": {
+    "JSReductionPercent": "100*(fixedOriginalJSBytes-fixedTransformedJSBytes)/fixedOriginalJSBytes",
+    "precision": "TP/(TP+FP); undefined if there are no predicted positives",
+    "positive": "predicted candidate bloat",
+    "truth": "independent function-entry observations for declared downstream clients",
+    "aggregation": "client mean within library, then equal-library mean on an explicitly shared eligible set",
+    "additionalFootprint": "saved implementations, recovery helpers and metadata reported separately",
+    "validation": "exact complete test signature, source hashes, mapping validity, no conversion errors"
+  },
+  "reuseTruthOnlyWhen": ["same release file bytes", "same dependency and production scope", "same source-position function IDs", "same original/instrumented client signature", "no unknown IDs"],
+  "noRQ2orRQ3RerunRequiredFor": "Recomputing precision from a validated independent truth snapshot",
+  "runtimeAdmission": {
+    "body-parser": "Node 12 Graal skips the PRI request test: 231 versus 232. Do not remove this test or relax the signature gate.",
+    "redux": "Uninstrumented Graal reproduces global-console proxy descriptor errors and does not complete the same 76-test suite. Validate a compatible runtime before profiling.",
+    "css-loader": "Old profiled run produced no usable graph. Test discovery succeeds under uninstrumented Graal; full-suite and profiled execution remain required."
+  },
+  "runtimeChangePolicy": "A changed Graal/NodeProf implementation requires qualification on all ten libraries and a new frozen run. Do not append three changed-runtime rows to seven old-runtime rows as one controlled experiment.",
+  "stopConditions": ["source identity changed", "reference truth not aligned", "suite signature differs", "trace unbalanced", "unresolved dynamic mappings", "transformer errors"],
+  "outputPolicy": "New run ID, no overwritten source measurements, preserve failed controls and all stderr/stdout",
+  "runPriority": ["runtime compatibility", "minimal instrumented mapping smoke", "RQ1 three-arm ablation", "static common-reference validation", "only then separately frozen RQ2-RQ4 if reruns are required"]
+}

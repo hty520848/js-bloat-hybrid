@@ -1,0 +1,10 @@
+row_id,file,edge,verdict,note,adjudicator,seconds
+r01,string-tagcloud.js,string-tagcloud.js:231:1->string-tagcloud.js:235:18,,,,
+r02,string-tagcloud.js,string-tagcloud.js:231:1->string-tagcloud.js:231:1,,,,
+r03,crypto-aes.js,crypto-aes.js:343:1->crypto-aes.js:352:7,,,,
+r04,crypto-aes.js,crypto-aes.js:359:1->crypto-aes.js:362:7,,,,
+r05,crypto-aes.js,crypto-aes.js:359:1->crypto-aes.js:368:7,,,,
+r06,crypto-aes.js,crypto-aes.js:282:1->crypto-aes.js:283:37,,,,
+r07,string-tagcloud.js,string-tagcloud.js:208:26->string-tagcloud.js:211:62,,,,
+r08,crypto-aes.js,crypto-aes.js:278:1->crypto-aes.js:279:49,,,,
+r09,crypto-aes.js,crypto-aes.js:343:1->crypto-aes.js:346:7,,,,
