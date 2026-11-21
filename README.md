@@ -1,4 +1,4 @@
-# JavaScript debloating replication package
+# Code and data for hybrid JavaScript debloating
 
 Companion artifact for *A Hybrid Method for Detecting and Eliminating Bloated Code in Server-Side JavaScript Applications*.
 
